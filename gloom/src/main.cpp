@@ -8,6 +8,7 @@
 
 // Standard headers
 #include <cstdlib>
+#include <vector>
 
 
 // A callback which allows GLFW to report errors whenever they occur
