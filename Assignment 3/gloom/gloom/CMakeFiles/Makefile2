@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom"
+CMAKE_SOURCE_DIR = "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom"
+CMAKE_BINARY_DIR = "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -76,14 +76,14 @@ preinstall: gloom/vendor/glfw/preinstall
 CMakeFiles/gloom.dir/all: gloom/vendor/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f CMakeFiles/gloom.dir/build.make CMakeFiles/gloom.dir/depend
 	$(MAKE) -f CMakeFiles/gloom.dir/build.make CMakeFiles/gloom.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles" --progress-num=18,19,20,21,22,23,24,25,26,27,28,29,30 "Built target gloom"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles" --progress-num=18,19,20,21,22,23,24,25,26,27,28,29,30 "Built target gloom"
 .PHONY : CMakeFiles/gloom.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gloom.dir/rule:
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles" 30
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles" 30
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gloom.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles" 0
 .PHONY : CMakeFiles/gloom.dir/rule
 
 # Convenience name for target.
@@ -139,14 +139,14 @@ gloom/vendor/glfw/src/preinstall:
 gloom/vendor/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) -f gloom/vendor/glfw/src/CMakeFiles/glfw.dir/build.make gloom/vendor/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) -f gloom/vendor/glfw/src/CMakeFiles/glfw.dir/build.make gloom/vendor/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target glfw"
 .PHONY : gloom/vendor/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
 gloom/vendor/glfw/src/CMakeFiles/glfw.dir/rule:
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles" 17
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles" 17
 	$(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/src/CMakeFiles/glfw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles" 0
 .PHONY : gloom/vendor/glfw/src/CMakeFiles/glfw.dir/rule
 
 # Convenience name for target.

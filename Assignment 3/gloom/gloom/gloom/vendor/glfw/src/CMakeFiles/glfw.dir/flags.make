@@ -6,7 +6,7 @@ C_FLAGS = -fPIC   -Wall
 
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I"/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/include" -I"/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src" -I"/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/gloom/vendor/glfw/src" 
+C_INCLUDES = -I"/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/include" -I"/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src" -I"/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/gloom/vendor/glfw/src" 
 
 # Custom flags: gloom/vendor/glfw/src/CMakeFiles/glfw.dir/context.c.o_FLAGS = -Wdeclaration-after-statement
 

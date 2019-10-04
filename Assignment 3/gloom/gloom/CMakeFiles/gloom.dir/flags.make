@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_FLAGS =  
 
-C_DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR="\"/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom\""
+C_DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR="\"/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom\""
 
-C_INCLUDES = -I"/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src" -I"/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glad/include" -I"/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/include" -I"/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glm" -I"/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/stb" 
+C_INCLUDES = -I"/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src" -I"/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glad/include" -I"/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/include" -I"/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glm" -I"/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/stb" 
 
 CXX_FLAGS =  -Wall -Wextra -Wpedantic -std=c++11  
 
-CXX_DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR="\"/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom\""
+CXX_DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR="\"/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom\""
 
-CXX_INCLUDES = -I"/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src" -I"/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glad/include" -I"/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/include" -I"/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glm" -I"/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/stb" 
+CXX_INCLUDES = -I"/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src" -I"/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glad/include" -I"/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/include" -I"/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glm" -I"/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/stb" 
 

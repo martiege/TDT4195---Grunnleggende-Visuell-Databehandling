@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/include/GLFW/glfw3.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/include/GLFW/glfw3.h
 stddef.h
 -
 stdint.h
@@ -50,7 +50,7 @@ GL/glext.h
 GL/glu.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/cocoa_joystick.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/cocoa_joystick.h
 IOKit/IOKitLib.h
 -
 IOKit/IOCFPlugIn.h
@@ -60,7 +60,7 @@ IOKit/hid/IOHIDLib.h
 IOKit/hid/IOHIDKeys.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/cocoa_platform.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/cocoa_platform.h
 stdint.h
 -
 dlfcn.h
@@ -74,19 +74,19 @@ CoreVideo/CVDisplayLink.h
 Cocoa/Cocoa.h
 -
 posix_thread.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/posix_thread.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/posix_thread.h
 cocoa_joystick.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/cocoa_joystick.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/cocoa_joystick.h
 nsgl_context.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/nsgl_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/nsgl_context.h
 egl_context.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/egl_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/egl_context.h
 osmesa_context.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/osmesa_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/osmesa_context.h
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/context.c
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/context.c
 internal.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 assert.h
 -
 stdio.h
@@ -98,9 +98,9 @@ limits.h
 stdio.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/egl_context.c
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/egl_context.c
 internal.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 stdio.h
 -
 string.h
@@ -110,13 +110,13 @@ stdlib.h
 assert.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/egl_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/egl_context.h
 EGL/eglplatform.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/glx_context.c
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/glx_context.c
 internal.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 string.h
 -
 stdlib.h
@@ -124,13 +124,13 @@ stdlib.h
 assert.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/glx_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/glx_context.h
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/init.c
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/init.c
 internal.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 mappings.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/mappings.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/mappings.h
 string.h
 -
 stdlib.h
@@ -142,9 +142,9 @@ stdarg.h
 assert.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/input.c
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/input.c
 internal.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 assert.h
 -
 float.h
@@ -156,25 +156,25 @@ stdlib.h
 string.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 glfw_config.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/glfw_config.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/glfw_config.h
 ../include/GLFW/glfw3.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/include/GLFW/glfw3.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/include/GLFW/glfw3.h
 cocoa_platform.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/cocoa_platform.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/cocoa_platform.h
 win32_platform.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/win32_platform.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/win32_platform.h
 x11_platform.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/x11_platform.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/x11_platform.h
 wl_platform.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/wl_platform.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/wl_platform.h
 null_platform.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/null_platform.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/null_platform.h
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/linux_joystick.c
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/linux_joystick.c
 internal.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 sys/types.h
 -
 sys/stat.h
@@ -196,7 +196,7 @@ string.h
 unistd.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/linux_joystick.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/linux_joystick.h
 linux/input.h
 -
 linux/limits.h
@@ -204,11 +204,11 @@ linux/limits.h
 regex.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/mappings.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/mappings.h
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/monitor.c
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/monitor.c
 internal.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 assert.h
 -
 math.h
@@ -222,25 +222,25 @@ stdlib.h
 limits.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/nsgl_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/nsgl_context.h
 stdatomic.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/null_joystick.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/null_joystick.h
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/null_platform.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/null_platform.h
 dlfcn.h
 -
 osmesa_context.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/osmesa_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/osmesa_context.h
 posix_time.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/posix_time.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/posix_time.h
 posix_thread.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/posix_thread.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/posix_thread.h
 null_joystick.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/null_joystick.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/null_joystick.h
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/osmesa_context.c
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/osmesa_context.c
 stdlib.h
 -
 string.h
@@ -248,37 +248,37 @@ string.h
 assert.h
 -
 internal.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/osmesa_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/osmesa_context.h
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/posix_thread.c
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/posix_thread.c
 internal.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 assert.h
 -
 string.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/posix_thread.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/posix_thread.h
 pthread.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/posix_time.c
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/posix_time.c
 internal.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 sys/time.h
 -
 time.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/posix_time.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/posix_time.h
 stdint.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/vulkan.c
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/vulkan.c
 internal.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 assert.h
 -
 string.h
@@ -286,11 +286,11 @@ string.h
 stdlib.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/wgl_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/wgl_context.h
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/win32_joystick.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/win32_joystick.h
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/win32_platform.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/win32_platform.h
 wctype.h
 -
 windows.h
@@ -304,17 +304,17 @@ dbt.h
 dwmapi.h
 -
 win32_joystick.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/win32_joystick.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/win32_joystick.h
 wgl_context.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/wgl_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/wgl_context.h
 egl_context.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/egl_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/egl_context.h
 osmesa_context.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/osmesa_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/osmesa_context.h
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/window.c
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/window.c
 internal.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 assert.h
 -
 string.h
@@ -324,7 +324,7 @@ stdlib.h
 float.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/wl_platform.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/wl_platform.h
 wayland-client.h
 -
 xkbcommon/xkbcommon.h
@@ -334,35 +334,35 @@ xkbcommon/xkbcommon-compose.h
 dlfcn.h
 -
 posix_thread.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/posix_thread.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/posix_thread.h
 posix_time.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/posix_time.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/posix_time.h
 linux_joystick.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/linux_joystick.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/linux_joystick.h
 null_joystick.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/null_joystick.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/null_joystick.h
 xkb_unicode.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/xkb_unicode.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/xkb_unicode.h
 egl_context.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/egl_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/egl_context.h
 osmesa_context.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/osmesa_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/osmesa_context.h
 wayland-xdg-shell-client-protocol.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/wayland-xdg-shell-client-protocol.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/wayland-xdg-shell-client-protocol.h
 wayland-xdg-decoration-client-protocol.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/wayland-xdg-decoration-client-protocol.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/wayland-xdg-decoration-client-protocol.h
 wayland-viewporter-client-protocol.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/wayland-viewporter-client-protocol.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/wayland-viewporter-client-protocol.h
 wayland-relative-pointer-unstable-v1-client-protocol.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/wayland-relative-pointer-unstable-v1-client-protocol.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/wayland-relative-pointer-unstable-v1-client-protocol.h
 wayland-pointer-constraints-unstable-v1-client-protocol.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/wayland-pointer-constraints-unstable-v1-client-protocol.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/wayland-pointer-constraints-unstable-v1-client-protocol.h
 wayland-idle-inhibit-unstable-v1-client-protocol.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/wayland-idle-inhibit-unstable-v1-client-protocol.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/wayland-idle-inhibit-unstable-v1-client-protocol.h
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/x11_init.c
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/x11_init.c
 internal.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 X11/Xresource.h
 -
 stdlib.h
@@ -376,9 +376,9 @@ stdio.h
 locale.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/x11_monitor.c
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/x11_monitor.c
 internal.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 limits.h
 -
 stdlib.h
@@ -388,7 +388,7 @@ string.h
 math.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/x11_platform.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/x11_platform.h
 unistd.h
 -
 signal.h
@@ -414,25 +414,25 @@ X11/extensions/Xinerama.h
 X11/extensions/XInput2.h
 -
 posix_thread.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/posix_thread.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/posix_thread.h
 posix_time.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/posix_time.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/posix_time.h
 xkb_unicode.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/xkb_unicode.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/xkb_unicode.h
 glx_context.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/glx_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/glx_context.h
 egl_context.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/egl_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/egl_context.h
 osmesa_context.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/osmesa_context.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/osmesa_context.h
 linux_joystick.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/linux_joystick.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/linux_joystick.h
 null_joystick.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/null_joystick.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/null_joystick.h
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/x11_window.c
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/x11_window.c
 internal.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 X11/cursorfont.h
 -
 X11/Xmd.h
@@ -452,11 +452,11 @@ errno.h
 assert.h
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/xkb_unicode.c
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/xkb_unicode.c
 internal.h
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/internal.h
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src/xkb_unicode.h
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src/xkb_unicode.h
 
 gloom/vendor/glfw/src/glfw_config.h
 

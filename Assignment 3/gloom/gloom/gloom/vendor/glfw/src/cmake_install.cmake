@@ -1,4 +1,4 @@
-# Install script for directory: /home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/vendor/glfw/src
+# Install script for directory: /home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/vendor/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

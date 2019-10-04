@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom"
+CMAKE_SOURCE_DIR = "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom"
+CMAKE_BINARY_DIR = "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all:
-	cd "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles" "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/gloom/vendor/glfw/CMakeFiles/progress.marks"
-	cd "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom" && $(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles" 0
+	cd "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles" "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/gloom/vendor/glfw/CMakeFiles/progress.marks"
+	cd "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom" && $(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom" && $(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/clean
+	cd "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom" && $(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,12 +97,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom" && $(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/preinstall
+	cd "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom" && $(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom" && $(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/preinstall
+	cd "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom" && $(MAKE) -f CMakeFiles/Makefile2 gloom/vendor/glfw/preinstall
 .PHONY : preinstall/fast
 
 # Help Target

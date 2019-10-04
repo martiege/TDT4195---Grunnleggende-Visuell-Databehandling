@@ -1,8 +1,8 @@
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/rebuild_cache.dir
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/gloom.dir
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/edit_cache.dir
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/gloom/vendor/glfw/CMakeFiles/rebuild_cache.dir
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/gloom/vendor/glfw/CMakeFiles/edit_cache.dir
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/gloom/vendor/glfw/src/CMakeFiles/rebuild_cache.dir
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/gloom/vendor/glfw/src/CMakeFiles/glfw.dir
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/gloom/vendor/glfw/src/CMakeFiles/edit_cache.dir
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/rebuild_cache.dir
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/gloom.dir
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/edit_cache.dir
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/gloom/vendor/glfw/CMakeFiles/rebuild_cache.dir
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/gloom/vendor/glfw/CMakeFiles/edit_cache.dir
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/gloom/vendor/glfw/src/CMakeFiles/rebuild_cache.dir
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/gloom/vendor/glfw/src/CMakeFiles/glfw.dir
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/gloom/vendor/glfw/src/CMakeFiles/edit_cache.dir

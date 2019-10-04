@@ -6,7 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/OBJLoader.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/OBJLoader.cpp
+OBJLoader.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/OBJLoader.hpp
+algorithm
+-
+exception
+-
+sceneGraph.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/sceneGraph.hpp
+toolbox.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/toolbox.hpp
+
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/OBJLoader.hpp
 string
 -
 vector
@@ -20,11 +32,19 @@ sstream
 limits
 -
 mesh.hpp
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/mesh.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/mesh.hpp
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/animate.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/animate.cpp
+animate.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/animate.hpp
+toolbox.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/toolbox.hpp
+iostream
+-
+
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/animate.hpp
 sceneGraph.hpp
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/sceneGraph.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/sceneGraph.hpp
 glm/mat4x4.hpp
 -
 glm/gtc/type_ptr.hpp
@@ -36,13 +56,33 @@ glm/vec3.hpp
 glm/gtc/matrix_transform.hpp
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/gloom/gloom.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/fractals.cpp
+gloom/gloom.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/gloom/gloom.hpp
+program.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/program.hpp
+fractals.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/fractals.hpp
+glad/glad.h
+-
+GLFW/glfw3.h
+-
+cstdlib
+-
+cmath
+-
+
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/fractals.hpp
+vector
+-
+
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/gloom/gloom.hpp
 glad/glad.h
 -
 string
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/gloom/shader.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/gloom/shader.hpp
 glad/glad.h
 -
 cassert
@@ -54,7 +94,21 @@ memory
 string
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/mesh.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/main.cpp
+gloom/gloom.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/gloom/gloom.hpp
+program.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/program.hpp
+glad/glad.h
+-
+GLFW/glfw3.h
+-
+cstdlib
+-
+vector
+-
+
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/mesh.hpp
 string
 -
 vector
@@ -62,23 +116,23 @@ vector
 cstring
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/program.cpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/program.cpp
 program.hpp
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/program.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/program.hpp
 gloom/gloom.hpp
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/gloom/gloom.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/gloom/gloom.hpp
 gloom/shader.hpp
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/gloom/shader.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/gloom/shader.hpp
 OBJLoader.hpp
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/OBJLoader.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/OBJLoader.hpp
 vao.hpp
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/vao.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/vao.hpp
 scene.hpp
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/scene.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/scene.hpp
 toolbox.hpp
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/toolbox.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/toolbox.hpp
 animate.hpp
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/animate.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/animate.hpp
 glm/mat4x4.hpp
 -
 glm/gtc/type_ptr.hpp
@@ -96,7 +150,7 @@ algorithm
 map
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/program.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/program.hpp
 GLFW/glfw3.h
 -
 glad/glad.h
@@ -104,19 +158,47 @@ glad/glad.h
 string
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/scene.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/scene.cpp
+scene.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/scene.hpp
+vao.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/vao.hpp
+gloom/gloom.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/gloom/gloom.hpp
+glm/mat4x4.hpp
+-
+glm/gtc/type_ptr.hpp
+-
+glm/gtx/transform.hpp
+-
+glm/vec3.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+algorithm
+-
+iostream
+-
+
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/scene.hpp
 sceneGraph.hpp
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/sceneGraph.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/sceneGraph.hpp
 OBJLoader.hpp
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/OBJLoader.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/OBJLoader.hpp
 mesh.hpp
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/mesh.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/mesh.hpp
 vector
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/sceneGraph.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/sceneGraph.cpp
+sceneGraph.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/sceneGraph.hpp
+iostream
+-
+
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/sceneGraph.hpp
 mesh.hpp
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/mesh.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/mesh.hpp
 glm/glm.hpp
 -
 glm/mat4x4.hpp
@@ -142,11 +224,61 @@ chrono
 fstream
 -
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/toolbox.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/toolbox.cpp
+toolbox.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/toolbox.hpp
+iostream
+-
+chrono
+-
+fstream
+-
+glm/gtx/transform.hpp
+-
 
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/vao.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/toolbox.hpp
+
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/triangle.cpp
+triangle.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/triangle.hpp
+gloom/gloom.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/gloom/gloom.hpp
+program.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/program.hpp
+glad/glad.h
+-
+GLFW/glfw3.h
+-
+cstdlib
+-
+
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/triangle.hpp
+vector
+-
+
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/utilities.cpp
+utilities.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/utilities.hpp
+
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/utilities.hpp
+
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/vao.cpp
+vao.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/vao.hpp
+gloom/gloom.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/gloom/gloom.hpp
+program.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/program.hpp
+glad/glad.h
+-
+GLFW/glfw3.h
+-
+cstdlib
+-
+
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/vao.hpp
 mesh.hpp
-/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/src/mesh.hpp
+/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/src/mesh.hpp
 
 vendor/glad/include/KHR/khrplatform.h
 stdint.h

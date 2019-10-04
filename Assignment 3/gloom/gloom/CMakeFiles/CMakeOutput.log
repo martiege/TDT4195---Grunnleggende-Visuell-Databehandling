@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/3.15.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/3.15.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,37 +23,37 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/3.15.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/3.15.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp
+Change Dir: /home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_1aed8/fast && /usr/bin/make -f CMakeFiles/cmTC_1aed8.dir/build.make CMakeFiles/cmTC_1aed8.dir/build
-make[1]: Entering directory '/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1aed8.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_1aed8.dir/testCCompiler.c.o   -c "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp/testCCompiler.c"
-Linking C executable cmTC_1aed8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1aed8.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1aed8.dir/testCCompiler.c.o  -o cmTC_1aed8 
-make[1]: Leaving directory '/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_95966/fast && /usr/bin/make -f CMakeFiles/cmTC_95966.dir/build.make CMakeFiles/cmTC_95966.dir/build
+make[1]: Entering directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_95966.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_95966.dir/testCCompiler.c.o   -c "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp/testCCompiler.c"
+Linking C executable cmTC_95966
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95966.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_95966.dir/testCCompiler.c.o  -o cmTC_95966 
+make[1]: Leaving directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
 
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp
+Change Dir: /home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_b412e/fast && /usr/bin/make -f CMakeFiles/cmTC_b412e.dir/build.make CMakeFiles/cmTC_b412e.dir/build
-make[1]: Entering directory '/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -v -o CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.15/Modules/CMakeCCompilerABI.c
+Run Build Command(s):/usr/bin/make cmTC_77e54/fast && /usr/bin/make -f CMakeFiles/cmTC_77e54.dir/build.make CMakeFiles/cmTC_77e54.dir/build
+make[1]: Entering directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.15/Modules/CMakeCCompilerABI.c
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 Target: x86_64-pc-linux-gnu
 Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto
 Thread model: posix
 gcc version 9.1.0 (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/cc1 -quiet -v /usr/share/cmake-3.15/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccitJhg7.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/cc1 -quiet -v /usr/share/cmake-3.15/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccwwHqsS.s
 GNU C17 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)
 	compiled by GNU C version 9.1.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.21-GMP
 
@@ -71,15 +71,15 @@ GNU C17 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 07f790f36f3287770d39e49f2618fa39
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o /tmp/ccitJhg7.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o /tmp/ccwwHqsS.s
 GNU assembler version 2.32 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.32
 COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-Linking C executable cmTC_b412e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b412e.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o  -o cmTC_b412e 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_77e54
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77e54.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o  -o cmTC_77e54 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper
@@ -89,10 +89,10 @@ Thread model: posix
 gcc version 9.1.0 (GCC) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b412e' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccn4sHy8.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b412e /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b412e' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_77e54' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc97w0QU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_77e54 /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_77e54' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
 
 
 
@@ -113,20 +113,20 @@ Parsed C implicit include dir info from above output: rv=done
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_b412e/fast && /usr/bin/make -f CMakeFiles/cmTC_b412e.dir/build.make CMakeFiles/cmTC_b412e.dir/build]
-  ignore line: [make[1]: Entering directory '/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.15/Modules/CMakeCCompilerABI.c]
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_77e54/fast && /usr/bin/make -f CMakeFiles/cmTC_77e54.dir/build.make CMakeFiles/cmTC_77e54.dir/build]
+  ignore line: [make[1]: Entering directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.15/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 9.1.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/cc1 -quiet -v /usr/share/cmake-3.15/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccitJhg7.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/cc1 -quiet -v /usr/share/cmake-3.15/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccwwHqsS.s]
   ignore line: [GNU C17 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)]
   ignore line: [	compiled by GNU C version 9.1.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.21-GMP]
   ignore line: []
@@ -144,15 +144,15 @@ Parsed C implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 07f790f36f3287770d39e49f2618fa39]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o /tmp/ccitJhg7.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o /tmp/ccwwHqsS.s]
   ignore line: [GNU assembler version 2.32 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.32]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking C executable cmTC_b412e]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b412e.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o  -o cmTC_b412e ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_77e54]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77e54.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o  -o cmTC_77e54 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper]
@@ -162,13 +162,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 9.1.0 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b412e' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccn4sHy8.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b412e /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_77e54' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc97w0QU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_77e54 /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crtn.o]
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccn4sHy8.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc97w0QU.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -184,7 +184,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_b412e] ==> ignore
+    arg [cmTC_77e54] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbeginS.o] ==> ignore
@@ -193,7 +193,7 @@ Parsed C implicit link information from above output:
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..]
-    arg [CMakeFiles/cmTC_b412e.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_77e54.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -218,34 +218,34 @@ Parsed C implicit link information from above output:
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp
+Change Dir: /home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_e8317/fast && /usr/bin/make -f CMakeFiles/cmTC_e8317.dir/build.make CMakeFiles/cmTC_e8317.dir/build
-make[1]: Entering directory '/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e8317.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_e8317.dir/testCXXCompiler.cxx.o -c "/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp/testCXXCompiler.cxx"
-Linking CXX executable cmTC_e8317
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8317.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_e8317.dir/testCXXCompiler.cxx.o  -o cmTC_e8317 
-make[1]: Leaving directory '/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_9d680/fast && /usr/bin/make -f CMakeFiles/cmTC_9d680.dir/build.make CMakeFiles/cmTC_9d680.dir/build
+make[1]: Entering directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9d680.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_9d680.dir/testCXXCompiler.cxx.o -c "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp/testCXXCompiler.cxx"
+Linking CXX executable cmTC_9d680
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d680.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_9d680.dir/testCXXCompiler.cxx.o  -o cmTC_9d680 
+make[1]: Leaving directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp
+Change Dir: /home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_2de88/fast && /usr/bin/make -f CMakeFiles/cmTC_2de88.dir/build.make CMakeFiles/cmTC_2de88.dir/build
-make[1]: Entering directory '/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++    -v -o CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp
+Run Build Command(s):/usr/bin/make cmTC_f44a6/fast && /usr/bin/make -f CMakeFiles/cmTC_f44a6.dir/build.make CMakeFiles/cmTC_f44a6.dir/build
+make[1]: Entering directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++    -v -o CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 Target: x86_64-pc-linux-gnu
 Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto
 Thread model: posix
 gcc version 9.1.0 (GCC) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccShRmZs.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cck7XnM5.s
 GNU C++14 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)
 	compiled by GNU C version 9.1.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.21-GMP
 
@@ -266,15 +266,15 @@ GNU C++14 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 651b755a2ab2663904afb50163356b15
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccShRmZs.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o /tmp/cck7XnM5.s
 GNU assembler version 2.32 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.32
 COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-Linking CXX executable cmTC_2de88
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2de88.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_2de88 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+Linking CXX executable cmTC_f44a6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f44a6.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f44a6 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper
@@ -284,10 +284,10 @@ Thread model: posix
 gcc version 9.1.0 (GCC) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2de88' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7e8Dot.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2de88 /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2de88' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f44a6' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbZmRc9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f44a6 /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f44a6' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
 
 
 
@@ -314,20 +314,20 @@ Parsed CXX implicit include dir info from above output: rv=done
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_2de88/fast && /usr/bin/make -f CMakeFiles/cmTC_2de88.dir/build.make CMakeFiles/cmTC_2de88.dir/build]
-  ignore line: [make[1]: Entering directory '/home/martin/Documents/NTNU-h-st-2019/TDT4195 - Grunnleggende Visuell Databehandling/Assignments/3 Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_f44a6/fast && /usr/bin/make -f CMakeFiles/cmTC_f44a6.dir/build.make CMakeFiles/cmTC_f44a6.dir/build]
+  ignore line: [make[1]: Entering directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 9.1.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccShRmZs.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cck7XnM5.s]
   ignore line: [GNU C++14 (GCC) version 9.1.0 (x86_64-pc-linux-gnu)]
   ignore line: [	compiled by GNU C version 9.1.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.21-GMP]
   ignore line: []
@@ -348,15 +348,15 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 651b755a2ab2663904afb50163356b15]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccShRmZs.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o /tmp/cck7XnM5.s]
   ignore line: [GNU assembler version 2.32 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.32]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking CXX executable cmTC_2de88]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2de88.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_2de88 ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking CXX executable cmTC_f44a6]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f44a6.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f44a6 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper]
@@ -366,13 +366,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 9.1.0 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_2de88' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7e8Dot.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_2de88 /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_f44a6' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbZmRc9.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f44a6 /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0 -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crtn.o]
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc7e8Dot.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccbZmRc9.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -388,7 +388,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_2de88] ==> ignore
+    arg [cmTC_f44a6] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../../../lib/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/crtbeginS.o] ==> ignore
@@ -397,7 +397,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0/../../..]
-    arg [CMakeFiles/cmTC_2de88.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_f44a6.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -415,5 +415,117 @@ Parsed CXX implicit link information from above output:
   implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
   implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/9.1.0;/usr/lib;/lib]
   implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6cb78/fast && /usr/bin/make -f CMakeFiles/cmTC_6cb78.dir/build.make CMakeFiles/cmTC_6cb78.dir/build
+make[1]: Entering directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6cb78.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_6cb78.dir/CheckIncludeFile.c.o   -c "/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp/CheckIncludeFile.c"
+Linking C executable cmTC_6cb78
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cb78.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6cb78.dir/CheckIncludeFile.c.o  -o cmTC_6cb78 
+make[1]: Leaving directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e25af/fast && /usr/bin/make -f CMakeFiles/cmTC_e25af.dir/build.make CMakeFiles/cmTC_e25af.dir/build
+make[1]: Entering directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e25af.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e25af.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e25af
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e25af.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_e25af.dir/CheckFunctionExists.c.o  -o cmTC_e25af -lpthread 
+make[1]: Leaving directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function XOpenDisplay exists in the /usr/lib/libX11.so;/usr/lib/libXext.so passed with the following output:
+Change Dir: /home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a2e7a/fast && /usr/bin/make -f CMakeFiles/cmTC_a2e7a.dir/build.make CMakeFiles/cmTC_a2e7a.dir/build
+make[1]: Entering directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a2e7a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_a2e7a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a2e7a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2e7a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay    -rdynamic CMakeFiles/cmTC_a2e7a.dir/CheckFunctionExists.c.o  -o cmTC_a2e7a /usr/lib/libX11.so /usr/lib/libXext.so 
+make[1]: Leaving directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8f3da/fast && /usr/bin/make -f CMakeFiles/cmTC_8f3da.dir/build.make CMakeFiles/cmTC_8f3da.dir/build
+make[1]: Entering directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8f3da.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_8f3da.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8f3da
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f3da.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname    -rdynamic CMakeFiles/cmTC_8f3da.dir/CheckFunctionExists.c.o  -o cmTC_8f3da 
+make[1]: Leaving directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4bd67/fast && /usr/bin/make -f CMakeFiles/cmTC_4bd67.dir/build.make CMakeFiles/cmTC_4bd67.dir/build
+make[1]: Entering directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4bd67.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_4bd67.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4bd67
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bd67.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect    -rdynamic CMakeFiles/cmTC_4bd67.dir/CheckFunctionExists.c.o  -o cmTC_4bd67 
+make[1]: Leaving directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_723c6/fast && /usr/bin/make -f CMakeFiles/cmTC_723c6.dir/build.make CMakeFiles/cmTC_723c6.dir/build
+make[1]: Entering directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_723c6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_723c6.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_723c6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_723c6.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove    -rdynamic CMakeFiles/cmTC_723c6.dir/CheckFunctionExists.c.o  -o cmTC_723c6 
+make[1]: Leaving directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cb9da/fast && /usr/bin/make -f CMakeFiles/cmTC_cb9da.dir/build.make CMakeFiles/cmTC_cb9da.dir/build
+make[1]: Entering directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cb9da.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_cb9da.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cb9da
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb9da.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat    -rdynamic CMakeFiles/cmTC_cb9da.dir/CheckFunctionExists.c.o  -o cmTC_cb9da 
+make[1]: Leaving directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_39477/fast && /usr/bin/make -f CMakeFiles/cmTC_39477.dir/build.make CMakeFiles/cmTC_39477.dir/build
+make[1]: Entering directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_39477.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTC_39477.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_39477
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39477.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    -rdynamic CMakeFiles/cmTC_39477.dir/CheckFunctionExists.c.o  -o cmTC_39477 -lICE 
+make[1]: Leaving directory '/home/martin/Documents/TDT4195 - Grunnleggende Visuell Databehandling/Assignment 3/gloom/gloom/CMakeFiles/CMakeTmp'
+
 
 
