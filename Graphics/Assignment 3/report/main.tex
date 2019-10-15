@@ -1,0 +1,49 @@
+% !TeX root = ./main.tex
+\documentclass[11pt, a4paper, USenglish]{article} % change ``USenglish'' to ``norsk'' if applicable.
+
+\setlength{\marginparwidth}{2cm}
+\usepackage{kyblab} % Contains all included packages. See kyblab.sty.
+\addbibresource{bibliography.bib} % Makes the bibliography file available to biblatex.
+
+\begin{document}
+
+% Titlepage
+\title{TDT4195 - Visual Computing Fundamentals - Assignment 3}
+\author{Group 119\\Martin Eek Gerhardsen}
+\date{October 4th, 2019}
+\begin{titlepage}
+    \maketitle
+    \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/itk_ntnu}\\
+    Department of Engineering Cybernetics
+    \end{figure}
+    \thispagestyle{empty}
+\end{titlepage}
+
+% TOC
+\newpage
+\tableofcontents
+\thispagestyle{empty} 
+
+% Main content
+\newpage
+\setcounter{page}{1}
+\include{part1}
+\include{part2}
+\include{part3}
+\include{part4}
+\include{part5}
+\include{part6}
+\include{part7}
+% \input simply inserts the contents of the file, while \include forces a \newpage.
+% See \input vs. \include: http://tex.stackexchange.com/questions/246/when-should-i-use-input-vs-include
+
+
+% References
+\newpage
+\addcontentsline{toc}{section}{References}
+\printbibliography{}
+\label{sec:bibliography}
+
+\end{document}
