@@ -14,3 +14,6 @@
 	path = gloom/vendor/stb
 	url = https://github.com/nothings/stb.git
 	branch = master
+[submodule "Image Processing/TDT4195-StarterCode"]
+	path = Image Processing/TDT4195-StarterCode
+	url = https://github.com/hukkelas/TDT4195-StarterCode.git
