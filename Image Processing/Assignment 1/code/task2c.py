@@ -15,6 +15,25 @@ def convolve_im(im, kernel):
         [type]: [np.array of shape [H, W, 3]. should be same as im]
     """
     # YOUR CODE HERE
+    (H, W, _)   = im.shape
+    (K, _)      = kernel.shape
+
+    assert(K & 1) # odd number
+    K_          = K // 2
+
+    zero_padded = np.zeros((H + 2 * K_, W + 2 * K_, 3))
+    zero_padded[K_:-K_, K_:-K_, :] = im
+    
+    # flippedy floppedy I'm taking your property
+    flipped_kernel = np.fliplr(np.flipud(kernel))
+
+    for y in range(H):
+        for x in range(W):
+            for c in range(3):
+                product = flipped_kernel * zero_padded[y:y+K, x:x+K, c]
+                im[y, x, c] = product.sum()
+
+
     return im
 
 
@@ -34,7 +53,7 @@ if __name__ == "__main__":
     ]) / 256
     # Convolve images
     smoothed_im1 = convolve_im(im.copy(), h_a)
-    smoothed_im2 = convolve_im(im, h_b)
+    smoothed_im2 = convolve_im(im.copy(), h_b)
 
     # DO NOT CHANGE
     assert isinstance(smoothed_im1, np.ndarray), \
