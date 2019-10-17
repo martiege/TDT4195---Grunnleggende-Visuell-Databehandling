@@ -1,6 +1,7 @@
 import numpy as np
 import os
 import matplotlib.pyplot as plt
+from time import time
 from task2ab import save_im
 
 
@@ -39,21 +40,35 @@ def convolve_im(im, kernel):
 
 if __name__ == "__main__":
     # Read image
-    impath = os.path.join("images", "lake.jpg")
-    im = plt.imread(impath)
+    im_path = os.path.join("images", "lake.jpg")
+    im = plt.imread(im_path)
 
     # Define the convolutional kernels
     h_a = np.ones((3, 3)) / 9
     h_b = np.array([
-        [1, 4, 6, 4, 1],
+        [1,  4,  6,  4, 1],
         [4, 16, 24, 16, 4],
         [6, 24, 36, 24, 6],
         [4, 16, 24, 16, 4],
-        [1, 4, 6, 4, 1],
+        [1,  4,  6,  4, 1],
     ]) / 256
+    # h_b = np.array((
+    #     [1, 0, -1],
+    #     [-0, 0, 0],
+    #     [-1, 0, 1]
+    # ), dtype="float")
+
     # Convolve images
+    t_1_0 = time()
     smoothed_im1 = convolve_im(im.copy(), h_a)
+    t_1_1 = time()
+    print("Time for h_a: ", t_1_1 - t_1_0)
+
+    t_2_0 = time()
     smoothed_im2 = convolve_im(im.copy(), h_b)
+    t_2_1 = time()
+    print("Time for h_b: ", t_2_1 - t_2_0)
+    print("Total time: ", t_2_1 - t_1_0)
 
     # DO NOT CHANGE
     assert isinstance(smoothed_im1, np.ndarray), \

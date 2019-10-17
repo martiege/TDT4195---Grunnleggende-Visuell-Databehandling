@@ -38,13 +38,14 @@ Then using \cref{eq:equalizer} on \cref{tab:initial_image} gives \cref{tab:equal
     \begin{bmatrix}
         n   & 0             & 1             & 2             & 3             & 4             & 5             & 6             & 7 \\ \hline
         f_n &\frac{2}{15} &\frac{2}{15} &\frac{2}{15} &\frac{2}{15} &\frac{3}{15} &\frac{2}{15} &\frac{2}{15} &\frac{0}{15} \\
-        F_n &\frac{2}{15} &\frac{4}{15} &\frac{6}{15} &\frac{8}{15} &\frac{11}{15} &\frac{13}{15} &\frac{15}{15} &\frac{15}{15}
+        F_n &\frac{2}{15} &\frac{4}{15} &\frac{6}{15} &\frac{8}{15} &\frac{11}{15} &\frac{13}{15} &\frac{15}{15} &\frac{15}{15} \\
+        E_q & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 6
     \end{bmatrix}
 \end{align*}
 
 \begin{equation}
     \label{eq:equalizer}
-    g_{i,j} = floor((L - 1) * \sum_{n = 0}^{f_{i,j}} \frac{i_n}{n_{\text{pixel}}} )
+    g_{i,j} = floor((L - 1) * \sum_{n = 0}^{f_{i,j}} \frac{i_n}{n_{\text{pixel}}}) = floor((L - 1) * F_n)
 \end{equation}
 
 \begin{table}[]
@@ -56,3 +57,44 @@ Then using \cref{eq:equalizer} on \cref{tab:initial_image} gives \cref{tab:equal
         4 & 6 & 1 & 1 & 4 \\ \hline
     \end{tabular}
 \end{table}
+
+\subsubsection*{e)}
+The log transform will increase the output intensity for low input intensities, and flatten for high input intensities. This will make it easier to see the lower ranges of the input intensities. If we then apply this transform to 
+
+
+\newpage
+\subsection{Task 2: Programming}
+\subsubsection*{a)}
+See the result from \cref{fig:greyscale}. 
+\begin{figure}[]
+    \centering
+    \includegraphics[width=1.00\textwidth]{figures/image_processed/lake_greyscale.jpg}
+    \caption{The grey scale version of the lake image}
+    \label{fig:greyscale}
+\end{figure}
+
+\subsubsection*{b)}
+Se the result from \cref{fig:inverse}. 
+\begin{figure}[]
+    \centering
+    \includegraphics[width=1.00\textwidth]{figures/image_processed/lake_inverse.jpg}
+    \caption{The inverse of the grey scale version of the lake image}
+    \label{fig:inverse}
+\end{figure}
+
+\subsubsection*{c)}
+See the results from \cref{fig:convolution_h_a} and \cref{fig:convolution_h_b}.
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=1.00\textwidth]{figures/image_processed/convolved_im_h_a.jpg}
+    \caption{Convolution of the lake image with the kernel $h_a$.}
+    \label{fig:convolution_h_a}
+\end{figure}
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=1.00\textwidth]{figures/image_processed/convolved_im_h_b.jpg}
+    \caption{Convolution of the lake image with the kernel $h_b$.}
+    \label{fig:convolution_h_b}
+\end{figure}

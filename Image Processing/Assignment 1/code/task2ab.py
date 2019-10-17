@@ -35,7 +35,11 @@ def inverse(im):
         im ([type]): [np.array of shape [H, W]]
     """    
      # YOUR CODE HERE
-    return np.subtract(255, im)
+    # simple test for normalization
+    if np.max(im) <= 1.0:
+        return np.subtract(1.0, im)
+    else:
+        return np.subtract(255.0, im)
 
 
 if __name__ == "__main__":
