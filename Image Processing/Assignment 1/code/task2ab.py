@@ -21,7 +21,6 @@ def greyscale(im):
         im ([type]): [np.array of shape [H, W]]
     """
     # YOUR CODE HERE
-    # # # # # # # # neato syntax :D
     return np.dot(im[..., :3], [0.212, 0.7152, 0.0722])
 
 
@@ -35,11 +34,12 @@ def inverse(im):
         im ([type]): [np.array of shape [H, W]]
     """    
      # YOUR CODE HERE
-    # simple test for normalization
-    if np.max(im) <= 1.0:
-        return np.subtract(1.0, im)
-    else:
-        return np.subtract(255.0, im)
+    return np.subtract(255.0, im)
+    # simple test for normalization, may be useful?
+    # if np.max(im) <= 1.0:
+    #     return np.subtract(1.0, im)
+    # else:
+    #     return np.subtract(255.0, im)
 
 
 if __name__ == "__main__":
