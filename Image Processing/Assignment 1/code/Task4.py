@@ -36,7 +36,6 @@ batch_size = 64
 learning_rate = .0192
 num_epochs = 5
 
-
 # Use CrossEntropyLoss for multi-class classification
 loss_function = torch.nn.CrossEntropyLoss()
 
@@ -47,7 +46,8 @@ model = FullyConnectedModel()
 optimizer = torch.optim.SGD(model.parameters(),
                             lr=learning_rate)
 image_transform = torchvision.transforms.Compose([
-  torchvision.transforms.ToTensor()
+  torchvision.transforms.ToTensor(),
+  torchvision.transforms.Normalize([0.5], [0.25])
 ])
 dataloader_train, dataloader_val = dataloaders.load_dataset(batch_size, image_transform=image_transform)
 
@@ -70,10 +70,10 @@ plt.ylim([0, 1])
 plt.legend()
 plt.xlabel("Number of Images Seen")
 plt.ylabel("Cross Entropy Loss")
-plt.savefig("training_loss.png")
+plt.savefig("normalized_training_loss.png")
 
 plt.show()
-torch.save(model.state_dict(), "saved_model.torch")
+torch.save(model.state_dict(), "normalized_saved_model.torch")
 final_loss, final_acc = utils.compute_loss_and_accuracy(
     dataloader_val, model, loss_function)
 print(f"Final Test Cross Entropy Loss: {final_loss}. Final Test accuracy: {final_acc}")
