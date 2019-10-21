@@ -5,7 +5,7 @@ from time import time
 from task2ab import save_im
 
 
-def convolve_im(im, kernel):
+def convolve_im(im, kernel, use_fourier=False):
     """ A function that convolves im with kernel
     
     Args:
@@ -22,18 +22,26 @@ def convolve_im(im, kernel):
     assert(K & 1) # odd number
     K_          = K // 2
 
-    zero_padded = np.zeros((H + 2 * K_, W + 2 * K_, 3))
-    zero_padded[K_:-K_, K_:-K_, :] = im
-    
-    # flippedy floppedy I'm taking your property
-    flipped_kernel = np.fliplr(np.flipud(kernel))
+    if use_fourier:
+        for c in range(3):
+            # convolution is correlation when fourier transform
+            # cheating?
+            im[..., c] = np.real(np.fft.ifft2(
+                    np.fft.fft2(im[..., c]) * np.fft.fft2(kernel, s=(H, W))
+                )
+            )
+    else:
+        zero_padded = np.zeros((H + 2 * K_, W + 2 * K_, 3))
+        zero_padded[K_:-K_, K_:-K_, :] = im
+        
+        # flippedy floppedy I'm taking your property
+        flipped_kernel = np.fliplr(np.flipud(kernel))
 
-    for y in range(H):
-        for x in range(W):
-            for c in range(3):
-                product = flipped_kernel * zero_padded[y:y+K, x:x+K, c]
-                im[y, x, c] = product.sum()
-
+        for y in range(H):
+            for x in range(W):
+                for c in range(3):
+                    product = flipped_kernel * zero_padded[y:y+K, x:x+K, c]
+                    im[y, x, c] = product.sum()
 
     return im
 
@@ -53,9 +61,14 @@ if __name__ == "__main__":
         [1,  4,  6,  4, 1],
     ]) / 256
     # h_b = np.array((
-    #     [1, 0, -1],
-    #     [-0, 0, 0],
+    #     [-1, 0, 1],
+    #     [-2, 0, 2],
     #     [-1, 0, 1]
+    # ), dtype="float")
+    # h_b = np.array((
+    #     [-1, -1, -1],
+    #     [-1,  8, -1],
+    #     [-1, -1, -1]
     # ), dtype="float")
 
     # Convolve images

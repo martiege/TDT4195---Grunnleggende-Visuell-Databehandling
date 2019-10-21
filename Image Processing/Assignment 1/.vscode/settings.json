@@ -1,7 +1,13 @@
 {
     "cSpell.words": [
+        "arange",
+        "block",
+        "circulant",
         "convolutional",
+        "diags",
         "hyperparameters",
+        "matrices",
+        "scipy",
         "softmax"
     ]
 }
