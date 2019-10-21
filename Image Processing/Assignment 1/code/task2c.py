@@ -1,8 +1,25 @@
 import numpy as np
 import os
 import matplotlib.pyplot as plt
+import scipy.sparse as sparse
 from time import time
 from task2ab import save_im
+
+
+
+def gen_H(im, kernel):
+    """ https://ieeexplore.ieee.org/document/7732252
+    Args: 
+        im ([type]): [np.array of shape [H, W]]
+        kernel ([type]): [np.array of shape [K, K]]
+    Returns: 
+        [type]: [scipy.sparse.csr_matrix of shape [H*W, (H+2)*(W+2)]]
+    """
+    
+    (m, n) = im.shape
+    (p, _) = kernel.shape
+    # m == H, n == W, p == K
+    H = sparse.csr_matrix((m * n, (m + 2) * (n + 2)), dtype=np.float)
 
 
 def convolve_im(im, kernel, use_fourier=False):
@@ -25,7 +42,7 @@ def convolve_im(im, kernel, use_fourier=False):
     if use_fourier:
         for c in range(3):
             # convolution is correlation when fourier transform
-            # cheating?
+            # cheating? not working?
             im[..., c] = np.real(np.fft.ifft2(
                     np.fft.fft2(im[..., c]) * np.fft.fft2(kernel, s=(H, W))
                 )
