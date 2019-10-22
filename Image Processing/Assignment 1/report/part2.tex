@@ -89,80 +89,86 @@ The standard training loss can be seen \cref{fig:training_loss} and the normaliz
 \end{figure}
 
 \subsubsection*{b)}
+For each class, we can see the weight image in the figures: \cref{fig:class_weight_0}, \cref{fig:class_weight_1}, \cref{fig:class_weight_2}, \cref{fig:class_weight_3}, \cref{fig:class_weight_4}, \cref{fig:class_weight_5}, \cref{fig:class_weight_6}, \cref{fig:class_weight_7}, \cref{fig:class_weight_8} and \cref{fig:class_weight_9}.  
 
-\begin{figure}
-    \begin{subfigure}
-        \centering
-        \includegraphics[width=0.4\textwidth]{figures/weights/class_0_weight_image.jpg}
-        \caption{Weight for class 0}
-        \label{fig:class_0_weight}
-    \end{subfigure}
-    \begin{subfigure}
-        \centering
-        \includegraphics[width=0.4\textwidth]{figures/weights/class_1_weight_image.jpg}
-        \caption{Weight for class 1}
-        \label{fig:class_1_weight}
-    \end{subfigure}
+This weights give what points of the image should increase the probability of that specific class being the correct one. As we only have one layer, this is a mapping of the input image to the output, and we can see the shapes that are \textit{extracted} by the weights. 
 
-    \newpage
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.50\textwidth]{figures/weights/class_0_weight_image.jpg}
+    \caption{Class weight 0}
+    \label{fig:class_weight_0}
+\end{figure}
 
-    \begin{subfigure}
-        \centering
-        \includegraphics[width=0.4\textwidth]{figures/weights/class_2_weight_image.jpg}
-        \caption{Weight for class 2}
-        \label{fig:class_2_weight}
-    \end{subfigure}
-    \begin{subfigure}
-        \centering
-        \includegraphics[width=0.4\textwidth]{figures/weights/class_3_weight_image.jpg}
-        \caption{Weight for class 3}
-        \label{fig:class_3_weight}
-    \end{subfigure}
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.50\textwidth]{figures/weights/class_1_weight_image.jpg}
+    \caption{Class weight 1}
+    \label{fig:class_weight_1}
+\end{figure}
 
-    \newpage
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.50\textwidth]{figures/weights/class_2_weight_image.jpg}
+    \caption{Class weight 2}
+    \label{fig:class_weight_2}
+\end{figure}
 
-    \begin{subfigure}
-        \centering
-        \includegraphics[width=0.4\textwidth]{figures/weights/class_4_weight_image.jpg}
-        \caption{Weight for class 4}
-        \label{fig:class_4_weight}
-    \end{subfigure}
-    \begin{subfigure}
-        \centering
-        \includegraphics[width=0.4\textwidth]{figures/weights/class_5_weight_image.jpg}
-        \caption{Weight for class 5}
-        \label{fig:class_5_weight}
-    \end{subfigure}
-    
-    \newpage
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.50\textwidth]{figures/weights/class_3_weight_image.jpg}
+    \caption{Class weight 3}
+    \label{fig:class_weight_3}
+\end{figure}
 
-    \begin{subfigure}
-        \centering
-        \includegraphics[width=0.4\textwidth]{figures/weights/class_6_weight_image.jpg}
-        \caption{Weight for class 6}
-        \label{fig:class_6_weight}
-    \end{subfigure}
-    \begin{subfigure}
-        \centering
-        \includegraphics[width=0.4\textwidth]{figures/weights/class_7_weight_image.jpg}
-        \caption{Weight for class 7}
-        \label{fig:class_7_weight}
-    \end{subfigure}
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.50\textwidth]{figures/weights/class_4_weight_image.jpg}
+    \caption{Class weight 4}
+    \label{fig:class_weight_4}
+\end{figure}
 
-    \newpage
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.50\textwidth]{figures/weights/class_5_weight_image.jpg}
+    \caption{Class weight 5}
+    \label{fig:class_weight_5}
+\end{figure}
 
-    \begin{subfigure}
-        \centering
-        \includegraphics[width=0.4\textwidth]{figures/weights/class_8_weight_image.jpg}
-        \caption{Weight for class 8}
-        \label{fig:class_8_weight}
-    \end{subfigure}
-    \begin{subfigure}
-        \centering
-        \includegraphics[width=0.4\textwidth]{figures/weights/class_9_weight_image.jpg}
-        \caption{Weight for class 9}
-        \label{fig:class_9_weight}
-    \end{subfigure}
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.50\textwidth]{figures/weights/class_6_weight_image.jpg}
+    \caption{Class weight 6}
+    \label{fig:class_weight_6}
+\end{figure}
 
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.50\textwidth]{figures/weights/class_7_weight_image.jpg}
+    \caption{Class weight 7}
+    \label{fig:class_weight_7}
+\end{figure}
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.50\textwidth]{figures/weights/class_8_weight_image.jpg}
+    \caption{Class weight 8}
+    \label{fig:class_weight_8}
+\end{figure}
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.50\textwidth]{figures/weights/class_9_weight_image.jpg}
+    \caption{Class weight 9}
+    \label{fig:class_weight_9}
+\end{figure}
+
+\subsubsection*{c)}
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=1.00\textwidth]{figures/new_learning_training_loss.png}
+    \caption{Training and test loss}
+    \label{fig:training_loss}
 \end{figure}
 
