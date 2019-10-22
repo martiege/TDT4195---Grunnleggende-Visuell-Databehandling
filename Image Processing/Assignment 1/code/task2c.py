@@ -33,14 +33,14 @@ def convolve_im(im, kernel, use_fourier=False):
         [type]: [np.array of shape [H, W, 3]. should be same as im]
     """
     # YOUR CODE HERE
-    (H, W, _)   = im.shape
+    (H, W, C)   = im.shape
     (K, _)      = kernel.shape
 
     assert(K & 1) # odd number
     K_          = K // 2
 
     if use_fourier:
-        for c in range(3):
+        for c in range(C):
             # convolution is correlation when fourier transform
             # cheating? not working?
             im[..., c] = np.real(np.fft.ifft2(
@@ -56,7 +56,7 @@ def convolve_im(im, kernel, use_fourier=False):
 
         for y in range(H):
             for x in range(W):
-                for c in range(3):
+                for c in range(C):
                     product = flipped_kernel * zero_padded[y:y+K, x:x+K, c]
                     im[y, x, c] = product.sum()
 
