@@ -60,7 +60,7 @@ Using \cref{eq:gradient_descent} and $\alpha = 0.1$, we get:
 \begin{align*}
     w_{1, t + 1} 
     &= w_{1, t} - \alpha \frac{ \partial C}{\partial w_1} 
-     = -1 + 0.1 * 2 * (2 - 1) = - 0.8 \\
+     = -1 - 0.1 * ( - 2 * (2 - 1)) = - 0.8 \\
     w_{3, t + 1} 
     &= w_{3, t} - \alpha \frac{ \partial C}{\partial w_3} 
      = -1 - 0.1 * (- 2 * (2 - 1)) = - 0.8 \\
@@ -72,19 +72,19 @@ Using \cref{eq:gradient_descent} and $\alpha = 0.1$, we get:
 \newpage
 \subsection{Task 4: Programming}
 \subsubsection*{a)}
-The standard training loss can be seen \cref{fig:training_loss} and the normalized here: \cref{fig:normalized_training_loss}. 
+The original training loss can be seen \cref{fig:training_loss} and the normalized here: \cref{fig:normalized_training_loss}. 
 
 \begin{figure}[]
     \centering
-    \includegraphics[width=1.00\textwidth]{figures/training_loss.png}
-    \caption{Training and test loss}
+    \includegraphics[width=1.00\textwidth]{figures/training/original_training_loss.png}
+    \caption{Training and test loss before the task}
     \label{fig:training_loss}
 \end{figure}
 
 \begin{figure}[]
     \centering
-    \includegraphics[width=1.00\textwidth]{figures/normalized_training_loss.png}
-    \caption{Normalized training and test loss}
+    \includegraphics[width=1.00\textwidth]{figures/training/original_vs_normalized_training_loss.png}
+    \caption{Original vs. normalized training and test loss}
     \label{fig:normalized_training_loss}
 \end{figure}
 
@@ -168,17 +168,17 @@ The accuracy is now way worse. This is due to the large learning rate. Even thou
 
 \begin{figure}[]
     \centering
-    \includegraphics[width=1.00\textwidth]{figures/new_learning_training_loss.png}
+    \includegraphics[width=1.00\textwidth]{figures/training/bad_learning_rate_training_loss.png}
     \caption{Training and test loss with learning rate 1}
     \label{fig:training_loss_learning_rate_1}
 \end{figure}
 
 \subsubsection*{d)}
-From \cref{fig:training_loss_hidden_layer} we can see that the training loss and test loss end up converging quickly to a lower cross entropy loss than the original neural network of \cref{fig:training_loss} and \cref{fig:normalized_training_loss} 
+From \cref{fig:training_loss_hidden_layer} we can see that the training loss and test loss end up converging quickly to a lower cross entropy loss than the original neural network of \cref{fig:training_loss} and \cref{fig:normalized_training_loss}. 
 
 \begin{figure}[]
     \centering
-    \includegraphics[width=1.00\textwidth]{figures/hidden_training_loss.png}
+    \includegraphics[width=1.00\textwidth]{figures/training/normalized_vs_hidden_layer_training_loss.png}
     \caption{Training and test loss with new hidden layer}
     \label{fig:training_loss_hidden_layer}
 \end{figure}
