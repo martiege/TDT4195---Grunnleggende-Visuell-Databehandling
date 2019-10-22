@@ -72,7 +72,9 @@ Using \cref{eq:gradient_descent} and $\alpha = 0.1$, we get:
 \newpage
 \subsection{Task 4: Programming}
 \subsubsection*{a)}
-The original training loss can be seen \cref{fig:training_loss} and the normalized here: \cref{fig:normalized_training_loss}. 
+The original training loss can be seen \cref{fig:training_loss} and the normalized here: \cref{fig:normalized_training_loss}. We may note that the loss converges quicker, and to a smaller value than the non-normalized data. This is as expected. 
+
+We may note that it seems like certain of the validation images were too different to the training images to be classified, which manifests as a spike in the test-loss of the normalized figures. I think this is the reason, but I'm not quiet sure, and would like some pointers if there are any specifics. It is interesting that this problem only manifests when using the single-layered neural network with the normalized images. If the images were not normalized, or the neural network had a hidden layer, this problem disappeared. 
 
 \begin{figure}[]
     \centering
@@ -164,7 +166,7 @@ This weights give what points of the image should increase the probability of th
 \end{figure}
 
 \subsubsection*{c)}
-The accuracy is now way worse. This is due to the large learning rate. Even though a larger learning rate may give faster learning, it is also makes the gradient descent be less accurate, and we will not reach the correct weights to minimize the cost function. 
+The accuracy is now way worse, as could be expected. This is due to the large learning rate. Even though a larger learning rate may give faster learning, it is also makes the gradient descent be less accurate, and we will not reach the correct weights to minimize the cost function. See \cref{fig:training_loss_learning_rate_1} for the cross entropy loss, but note that the plot does initially start even higher on the y-axis, but limiting it to 100 was done to show the shape of the function better. 
 
 \begin{figure}[]
     \centering
@@ -174,7 +176,7 @@ The accuracy is now way worse. This is due to the large learning rate. Even thou
 \end{figure}
 
 \subsubsection*{d)}
-From \cref{fig:training_loss_hidden_layer} we can see that the training loss and test loss end up converging quickly to a lower cross entropy loss than the original neural network of \cref{fig:training_loss} and \cref{fig:normalized_training_loss}. 
+From \cref{fig:training_loss_hidden_layer} we can see that the training loss and test loss end up converging faster to a lower cross entropy loss than the original neural network of \cref{fig:training_loss} and \cref{fig:normalized_training_loss}. This means that using the hidden layer both helps the neural network learn faster (using the same hyperparameters), as well as converge to a lower value, and the network is therefore both faster (to teach) and better (more likely to get the answer correct) than the original network. 
 
 \begin{figure}[]
     \centering

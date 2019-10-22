@@ -6,21 +6,7 @@ from time import time
 from task2ab import save_im
 
 
-
-def gen_H(im, kernel):
-    """ https://ieeexplore.ieee.org/document/7732252
-    Args: 
-        im ([type]): [np.array of shape [H, W]]
-        kernel ([type]): [np.array of shape [K, K]]
-    Returns: 
-        [type]: [scipy.sparse.csr_matrix of shape [H*W, (H+2)*(W+2)]]
-    """
-    
-    (m, n) = im.shape
-    (p, _) = kernel.shape
-    # m == H, n == W, p == K
-    H = sparse.csr_matrix((m * n, (m + 2) * (n + 2)), dtype=np.float)
-
+# https://ieeexplore.ieee.org/document/7732252
 
 def convolve_im(im, kernel, use_fourier=False):
     """ A function that convolves im with kernel
@@ -39,26 +25,17 @@ def convolve_im(im, kernel, use_fourier=False):
     assert(K & 1) # odd number
     K_          = K // 2
 
-    if use_fourier:
-        for c in range(C):
-            # convolution is correlation when fourier transform
-            # cheating? not working?
-            im[..., c] = np.real(np.fft.ifft2(
-                    np.fft.fft2(im[..., c]) * np.fft.fft2(kernel, s=(H, W))
-                )
-            )
-    else:
-        zero_padded = np.zeros((H + 2 * K_, W + 2 * K_, 3))
-        zero_padded[K_:-K_, K_:-K_, :] = im
-        
-        # flippedy floppedy I'm taking your property
-        flipped_kernel = np.fliplr(np.flipud(kernel))
+    zero_padded = np.zeros((H + 2 * K_, W + 2 * K_, 3))
+    zero_padded[K_:-K_, K_:-K_, :] = im
+    
+    # flippedy floppedy I'm taking your property
+    flipped_kernel = np.fliplr(np.flipud(kernel))
 
-        for y in range(H):
-            for x in range(W):
-                for c in range(C):
-                    product = flipped_kernel * zero_padded[y:y+K, x:x+K, c]
-                    im[y, x, c] = product.sum()
+    for y in range(H):
+        for x in range(W):
+            for c in range(C):
+                product = flipped_kernel * zero_padded[y:y+K, x:x+K, c]
+                im[y, x, c] = product.sum()
 
     return im
 
