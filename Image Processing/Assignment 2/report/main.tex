@@ -1,0 +1,43 @@
+% !TeX root = ./main.tex
+\documentclass[11pt, a4paper, USenglish]{article} % change ``USenglish'' to ``norsk'' if applicable.
+
+\setlength{\marginparwidth}{2cm}
+\usepackage{kyblab} % Contains all included packages. See kyblab.sty.
+\addbibresource{bibliography.bib} % Makes the bibliography file available to biblatex.
+
+\begin{document}
+
+% Titlepage
+\title{Image Processing - Assignment 1}
+\author{Group 3\\Martin Eek Gerhardsen}
+\date{October 12}
+\begin{titlepage}
+    \maketitle
+    \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/itk_ntnu}\\
+    Department of Engineering Cybernetics
+    \end{figure}
+    \thispagestyle{empty}
+\end{titlepage}
+
+% TOC
+\newpage
+\tableofcontents
+\thispagestyle{empty} % Avoid page numbering on the table of contents.
+
+% Main content
+\newpage
+\setcounter{page}{1}
+\include{part1}
+\include{part2}
+% \input simply inserts the contents of the file, while \include forces a \newpage.
+% See \input vs. \include: http://tex.stackexchange.com/questions/246/when-should-i-use-input-vs-include
+
+% References
+\newpage
+\addcontentsline{toc}{section}{References}
+\printbibliography{}
+\label{sec:bibliography}
+
+\end{document}

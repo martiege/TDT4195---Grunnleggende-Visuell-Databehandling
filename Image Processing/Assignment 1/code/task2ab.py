@@ -21,6 +21,8 @@ def greyscale(im):
         im ([type]): [np.array of shape [H, W]]
     """
     # YOUR CODE HERE
+    # using dot function from numpy
+    # the weighted average is applied to the RGB colours
     return np.dot(im[..., :3], [0.212, 0.7152, 0.0722])
 
 
@@ -29,17 +31,16 @@ def inverse(im):
     
     Args:
         im ([type]): [np.array of shape [H, W]]
+            type is in the range [0, 255]
     
     Returns:
         im ([type]): [np.array of shape [H, W]]
+            type is in the range [0, 255]
     """    
      # YOUR CODE HERE
+    # note range of type is important here 
+    # image pixel value is assumed to be between 0 and 255
     return np.subtract(255.0, im)
-    # simple test for normalization, may be useful?
-    # if np.max(im) <= 1.0:
-    #     return np.subtract(1.0, im)
-    # else:
-    #     return np.subtract(255.0, im)
 
 
 if __name__ == "__main__":

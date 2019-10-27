@@ -20,21 +20,32 @@ def convolve_im(im, kernel, use_fourier=False):
     """
     # YOUR CODE HERE
     (H, W, C)   = im.shape
-    (K, _)      = kernel.shape
+    (K, k)      = kernel.shape
 
-    assert(K & 1) # odd number
+    # zero-padding offset
     K_          = K // 2
+
+    assert(K == k) # kernel is of shape [K, K]
+    assert(K &  1) # odd number (select 2**0 bit)
+    assert(C == 3) # RGB
+    # could do some error handling, but not part of the task
 
     zero_padded = np.zeros((H + 2 * K_, W + 2 * K_, 3))
     zero_padded[K_:-K_, K_:-K_, :] = im
     
     # flippedy floppedy I'm taking your property
+    # the kernel is rotated 180 degrees
+    # image convolution can be represented as correlation now
     flipped_kernel = np.fliplr(np.flipud(kernel))
 
     for y in range(H):
         for x in range(W):
             for c in range(C):
+                # array multiplication is element-wise
+                # correlation can be applied with a flipped kernel
                 product = flipped_kernel * zero_padded[y:y+K, x:x+K, c]
+                
+                # sum of the resulting product is the convolution
                 im[y, x, c] = product.sum()
 
     return im

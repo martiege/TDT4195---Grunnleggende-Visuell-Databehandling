@@ -28,8 +28,8 @@ files_to_include = [
 print("For task 4, select either the jupyter notebook or the python (.py) file.")
 filepath = query("Which file should be included in the zip?",
                  {
-                     "1": "task4.py",
-                     "2": "task4.ipynb"
+                     "1": "Task4.py",
+                     "2": "Task4.ipynb"
                  })
 files_to_include.append(filepath)
 
