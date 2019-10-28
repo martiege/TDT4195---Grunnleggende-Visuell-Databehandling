@@ -24,7 +24,7 @@ def MaxPool2d(im: np.array,
     for y in range(new_H):
         for x in range(new_W):
             for c in range(new_C):
-                new_im[y, x, c] = im[(y*stride):((y + 1)*stride), (x*stride):((x+1)*stride), c].max()
+                new_im[y, x, c] = im[(y*stride):((y+1)*stride), (x*stride):((x+1)*stride), c].max()
 
 
     return new_im
