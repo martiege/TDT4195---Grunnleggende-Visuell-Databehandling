@@ -14,7 +14,7 @@ if __name__ == "__main__":
     kernel = np.load("images/notch_filter.npy")
 
     ### START YOUR CODE HERE ### (You can change anything inside this block)
-    im_filtered = im
+    im_filtered = convolve_im(im, kernel, False)
 
     ### END YOUR CODE HERE ###
 
