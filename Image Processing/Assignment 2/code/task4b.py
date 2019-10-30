@@ -26,7 +26,7 @@ def convolve_im(im: np.array,
     """
     ### START YOUR CODE HERE ### (You can change anything inside this block)
 
-    conv_result = np.fft.ifft2(np.fft.fft2(im) * np.fft.fft2(kernel, im.shape))
+    conv_result = np.fft.ifft2(np.fft.fft2(im) * np.fft.fft2(kernel))
 
     if verbose:
         # Use plt.subplot to place two or more images beside eachother
