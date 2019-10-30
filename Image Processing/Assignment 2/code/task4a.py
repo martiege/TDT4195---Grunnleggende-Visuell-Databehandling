@@ -38,7 +38,7 @@ def convolve_im(im: np.array,
 
 
 if __name__ == "__main__":
-    verbose = True
+    verbose = False
 
     # Changing this code should not be needed
     im = skimage.data.camera()
