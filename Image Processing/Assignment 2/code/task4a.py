@@ -5,7 +5,6 @@ import utils
 
 
 
-
 def convolve_im(im: np.array,
                 fft_kernel: np.array,
                 verbose=True):
@@ -23,14 +22,31 @@ def convolve_im(im: np.array,
         im: np.array of shape [H, W]
     """
     ### START YOUR CODE HERE ### (You can change anything inside this block)
-    conv_result = np.fft.ifft2(np.fft.fft2(im) * fft_kernel)
+    fft_im = np.fft.fft2(im)
+    fft_conv = fft_im * fft_kernel
+    conv_result = np.real(np.fft.ifft2(fft_conv))
     if verbose:
         # Use plt.subplot to place two or more images beside eachother
         plt.figure(figsize=(20, 4))
         # plt.subplot(num_rows, num_cols, position (1-indexed))
         plt.subplot(1, 5, 1)
+        plt.title("Original image")
         plt.imshow(im, cmap="gray")
+        
+        plt.subplot(1, 5, 2)
+        plt.title("FFT of original image")
+        plt.imshow(np.fft.fftshift(np.log(np.abs(fft_im))), cmap="gray")
+        
+        plt.subplot(1, 5, 3)
+        plt.title("FFT kernel")
+        plt.imshow(np.fft.fftshift(fft_kernel), cmap="gray")
+
+        plt.subplot(1, 5, 4)
+        plt.title("FFT multiplication (convolution)")
+        plt.imshow(np.fft.fftshift(np.log(np.abs(fft_conv))), cmap="gray")
+        
         plt.subplot(1, 5, 5) 
+        plt.title("Resulting image")
         plt.imshow(conv_result, cmap="gray")
 
     ### END YOUR CODE HERE ###
@@ -38,7 +54,7 @@ def convolve_im(im: np.array,
 
 
 if __name__ == "__main__":
-    verbose = False
+    verbose = True
 
     # Changing this code should not be needed
     im = skimage.data.camera()
@@ -47,10 +63,17 @@ if __name__ == "__main__":
     frequency_kernel_low_pass = utils.create_low_pass_frequency_kernel(im, radius=50)
     image_low_pass = convolve_im(im, frequency_kernel_low_pass,
                                  verbose=verbose)
+    
+    if verbose:
+        plt.savefig("image_processed/camera_low_pass_subplots.png")
+
     # DO NOT CHANGE
     frequency_kernel_high_pass = utils.create_high_pass_frequency_kernel(im, radius=50)
     image_high_pass = convolve_im(im, frequency_kernel_high_pass,
                                   verbose=verbose)
+
+    if verbose:
+        plt.savefig("image_processed/camera_high_pass_subplots.png")
 
     if verbose:
         plt.show()
