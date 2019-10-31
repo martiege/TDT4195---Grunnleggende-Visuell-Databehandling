@@ -9,7 +9,27 @@ From the convolution theorem, we can see that the Fourier transform of a convolu
 \end{itemize}
 
 \subsubsection*{b)}
+Low- and high-pass filters tell us which frequencies should be kept, low-pass allows low frequencies to pass, and high-pass allows high frequencies to pass. 
 
+This means that low-pass filters should be close to the filter gain (i.e. 1) frequencies closer to the origin than the cut-off frequency (low frequencies), and should be close to zero for higher frequencies than the cut-off frequency. Depending on how we want the filter to behave, the filter can either be simililar to a cylinder or a cone, where cylinder gives a much \textit{harsher} cut-off frequency (no frequencies after cut-off) and cone gives a \textit{smoother} cut-off frequency (allowing, but suppressing some frequencies after cut-off). 
+
+The high-pass filter is simply the $K - LPF$, where $K$ is the filter gain (i.e. 1 again) and $LPF$ is the low-pass filter. This implies that the high-pass filter follows the same pattern as the low-pass, but where the low-pass filter includes frequencies, the high-pass filter removes them, and vice versa where the high-pass includes the frequencies. 
+
+\subsubsection*{c)}
+As the images are shifted, we find the low frequencies in the centre and high around the image. Also using the white parts of the images as high amplitude, and black as low amplitude. 
+
+a)
+
+
+b)
+This is a high-pass filter, the lower frequencies in the centre are largely suppressed, and the higher frequencies are multiplied with values closer to 1. 
+
+c)
+This is a low-pass filter, the lower frequencies in the centre are largely included, while the higher frequencies further out are 
 
 \newpage
 \subsection{Task 4: Programming}
+\subsubsection*{a)}
+
+\subsubsection*{b)}
+
