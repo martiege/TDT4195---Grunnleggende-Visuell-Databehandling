@@ -1,6 +1,7 @@
 import numpy as np
 import skimage
 import utils
+import matplotlib.pyplot as plt
 from task4b import convolve_im
 
 
