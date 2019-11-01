@@ -1,6 +1,7 @@
 import numpy as np
 import skimage
 import utils
+import matplotlib.pyplot as plt
 from task4b import convolve_im
 
 
@@ -19,7 +20,11 @@ def sharpen(im: np.array):
     ])
     ### START YOUR CODE HERE ### (You can change anything inside this block)
     
-    im = convolve_im(im, laplacian, False)
+    verbose = False
+    im = convolve_im(im, laplacian, verbose)
+
+    if verbose:
+        plt.savefig("image_processed/moon_sharpened_subplots.png")
     
     ### END YOUR CODE HERE ###
     return im

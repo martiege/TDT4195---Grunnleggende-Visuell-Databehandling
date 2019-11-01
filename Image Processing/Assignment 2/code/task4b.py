@@ -28,25 +28,42 @@ def convolve_im(im: np.array,
     H, W = im.shape 
     K, _ = kernel.shape 
 
-    kernel = np.pad(kernel, (((H-K+1)//2, (H-K)//2), ((W-K+1)//2, (W-K)//2)), 'constant')
-    kernel = np.fft.ifftshift(kernel)
+    kernel = np.pad(kernel, ((0, H-K), (0, H-K)), 'constant')
 
-    conv_result = np.real(np.fft.ifft2(np.fft.fft2(im) * np.fft.fft2(kernel)))
+    fft_im = np.fft.fft2(im)
+    fft_kernel = np.fft.fft2(kernel)
+    fft_conv = fft_im * fft_kernel
+    conv_result = np.real(np.fft.ifft2(fft_conv))
 
     if verbose:
         # Use plt.subplot to place two or more images beside eachother
         plt.figure(figsize=(20, 4))
         # plt.subplot(num_rows, num_cols, position (1-indexed))
         plt.subplot(1, 5, 1)
+        plt.title("Original image")
         plt.imshow(im, cmap="gray")
-        plt.subplot(1, 5, 5)
+        
+        plt.subplot(1, 5, 2)
+        plt.title("FFT of original image")
+        plt.imshow(np.fft.fftshift(np.log(np.abs(fft_im))), cmap="gray")
+        
+        plt.subplot(1, 5, 3)
+        plt.title("FFT kernel")
+        plt.imshow(np.fft.fftshift(np.abs(fft_kernel)), cmap="gray")
+
+        plt.subplot(1, 5, 4)
+        plt.title("FFT multiplication (convolution)")
+        plt.imshow(np.fft.fftshift(np.log(np.abs(fft_conv))), cmap="gray")
+        
+        plt.subplot(1, 5, 5) 
+        plt.title("Resulting image")
         plt.imshow(conv_result, cmap="gray")
     ### END YOUR CODE HERE ###
     return conv_result
 
 
 if __name__ == "__main__":
-    verbose = False # change if you want
+    verbose = True # change if you want
 
     # Changing this code should not be needed
     im = skimage.data.camera()
@@ -62,6 +79,9 @@ if __name__ == "__main__":
     ]) / 256
     image_gaussian = convolve_im(im, gaussian_kernel, verbose)
 
+    if verbose:
+        plt.savefig("image_processed/camera_gaussian_subplots.png")
+
     # DO NOT CHANGE
     sobel_horizontal = np.array([
         [-1, 0, 1],
@@ -69,6 +89,9 @@ if __name__ == "__main__":
         [-1, 0, 1]
     ])
     image_sobelx = convolve_im(im, sobel_horizontal, verbose)
+
+    if verbose:
+        plt.savefig("image_processed/camera_sobelx_subplots.png")
 
     if verbose:
         plt.show()
