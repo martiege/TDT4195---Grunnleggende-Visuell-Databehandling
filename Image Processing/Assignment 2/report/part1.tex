@@ -185,32 +185,34 @@ For Chelsea, see \cref{fig:chelsea_original}, and for the maxpooled version see 
 
 \begin{figure}[]
     \centering
-    \includegraphics[width=1.00\textwidth]{figures/image_processed/chelsea.png}
+    \includegraphics{figures/image_processed/chelsea.png}
     \caption{Chelsea without maxpooling}
     \label{fig:chelsea_original}
 \end{figure}
 
 \begin{figure}[]
     \centering
-    \includegraphics[width=1.00\textwidth]{figures/image_processed/chelsea_maxpooled.png}
+    \includegraphics{figures/image_processed/chelsea_maxpooled.png}
     \caption{Chelsea with maxpooling}
     \label{fig:chelsea_maxpooled}
 \end{figure}
 
 \begin{figure}[]
     \centering
-    \includegraphics[width=1.00\textwidth]{figures/image_processed/checkerboard.png}
+    \includegraphics{figures/image_processed/checkerboard.png}
     \caption{Checkerboard without maxpooling}
     \label{fig:checkerboard_original}
 \end{figure}
 
 \begin{figure}[]
     \centering
-    \includegraphics[width=1.00\textwidth]{figures/image_processed/checkerboard_maxpooled.png}
+    \includegraphics{figures/image_processed/checkerboard_maxpooled.png}
     \caption{Checkerboard with maxpooling}
     \label{fig:checkerboard_maxpooled}
 \end{figure}
 
+
+\newpage
 \subsubsection*{b)}
 See \cref{fig:task2b} for the plot of the cross entropy loss for the test and training data. The final validation loss was calculated as $0.06696378275700904$, and the final validation accuracy was calculated as $0.9758$. We can notice overfitting when training loss is a lot smaller than validation loss. From \cref{fig:task2b}, we can notice that the test/validation loss is generally pretty similar to the training loss, and there doesn't seem to be enough information to conclude that the network has been overfitted. 
 
@@ -252,13 +254,13 @@ This kernel is very similar to a Sobel x-kernel, with \textit{darker} weights on
 The kernel seems to be more purple on the left, which indicates more red and blue, and more green/white on the right, which indicates more red, green and blue with a focus on green. What we may note, is that the focus seems to be on green, as the largest difference seems to be between these (no green on the left, mostly green on the right). 
 
 Kernel 8: 
-
+This kernel highlights the centre/diagonal, while the diagonal above and below are darker. This seems to emphasise the whiter diagonals of the image, but it also seems like this kernel is removing certain diagonals, as seen from the resulting image. 
 
 Kernel 19: 
 There is a huge focus on green in this kernel, with a focus on the bottom right of the kernel. So this kernel seems to extract the ground / grass. As yellow is a combination of green and red, we can see in the image that the grass is highlighted. 
 
 Kernel 22: 
-
+The kernel looks similar to a Sobel y-kernel, though it doesn't cover the entire kernel and more diagonalized.  This, then, seems to be detecting edges around larger objects. As we can see from the image, it seems to be detecting the edges (primarily in the y-direction) of the zebra. 
 
 Kernel 34: 
-This kernel is very similar to kernel 19, though with a focus on blue. From the image, we can see that the sky is highlighted, so this kernel seems to be extracting the sky, or other larger blue bodies (possibly water also?). 
+This kernel is very similar to kernel 19, though with a focus on blue. From the image, we can see that the sky is highlighted, so this kernel seems to be extracting the sky, or other larger blue bodies (speculation: possibly water also?). 
