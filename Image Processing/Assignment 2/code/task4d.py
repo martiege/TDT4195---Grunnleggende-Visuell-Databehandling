@@ -20,8 +20,8 @@ def sharpen(im: np.array):
     ])
     ### START YOUR CODE HERE ### (You can change anything inside this block)
     
-    verbose = False
-    im = convolve_im(im, laplacian, verbose)
+    verbose = True
+    im += convolve_im(im, laplacian, verbose)
 
     if verbose:
         plt.savefig("image_processed/moon_sharpened_subplots.png")

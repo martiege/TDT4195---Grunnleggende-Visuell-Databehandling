@@ -2,5 +2,5 @@
     "cSpell.words": [
         "ifft"
     ],
-    "python.pythonPath": "/work/martiege/anaconda/con/envs/ip/bin/python"
+    "python.pythonPath": "/usr/bin/python3"
 }
