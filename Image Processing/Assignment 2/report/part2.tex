@@ -11,7 +11,7 @@ From the convolution theorem, we can see that the Fourier transform of a convolu
 \subsubsection*{b)}
 Low- and high-pass filters tell us which frequencies should be kept, low-pass allows low frequencies to pass, and high-pass allows high frequencies to pass. 
 
-This means that low-pass filters should be close to the filter gain (i.e. 1) frequencies closer to the origin than the cut-off frequency (low frequencies), and should be close to zero for higher frequencies than the cut-off frequency. Depending on how we want the filter to behave, the filter can either be simililar to a cylinder or a cone, where cylinder gives a much \textit{harsher} cut-off frequency (no frequencies after cut-off) and cone gives a \textit{smoother} cut-off frequency (allowing, but suppressing some frequencies after cut-off). 
+This means that low-pass filters should be close to the filter gain (i.e. 1) frequencies closer to the origin than the cut-off frequency (low frequencies), and should be close to zero for higher frequencies than the cut-off frequency. Depending on how we want the filter to behave, the filter can either be similar to a cylinder or a cone, where cylinder gives a much \textit{harsher} cut-off frequency (no frequencies after cut-off) and cone gives a \textit{smoother} cut-off frequency (allowing, but suppressing some frequencies after cut-off). 
 
 The high-pass filter is simply the $K - LPF$, where $K$ is the filter gain (i.e. 1 again) and $LPF$ is the low-pass filter. This implies that the high-pass filter follows the same pattern as the low-pass, but where the low-pass filter includes frequencies, the high-pass filter removes them, and vice versa where the high-pass includes the frequencies. 
 
@@ -22,7 +22,7 @@ a)
 This is primarily a high-pass filter, as the lower frequencies are suppressed. This filter is primarily a high-pass filter along the y-axis (so high frequencies are only allowed given that they are along the y-axis), rather than both x and y. 
 
 b)
-This is a high-pass filter, the lower frequencies in the centre are largely suppressed, and the higher frequencies are multiplied with values closer to 1. 
+This is a high-pass filter, the lower frequencies in the centre are largely suppressed, and the higher frequencies are multiplied with values closer to 1. Though, as the values closest to the x- and y-axes are slightly darker than the diagonals for high frequencies, the filter prefers the signal to have both high frequencies in x and y at the same time. 
 
 c)
 This is a low-pass filter, the lower frequencies in the centre are largely included, while the higher frequencies are suppressed.
@@ -30,6 +30,59 @@ This is a low-pass filter, the lower frequencies in the centre are largely inclu
 \newpage
 \subsection{Task 4: Programming}
 \subsubsection*{a)}
+The high-pass filtered image, with the amplitude of the Fourier transforms, can be seen from \cref{fig:camera_high_pass}, and similarly for the low-pass filtered image from \cref{fig:camera_low_pass}. 
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=1.00\textwidth]{figures/image_processed/camera_high_pass_subplots.png}
+    \caption{High-pass filtered camera man}
+    \label{fig:camera_high_pass}
+\end{figure}
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=1.00\textwidth]{figures/image_processed/camera_low_pass_subplots.png}
+    \caption{Low-pass filtered camera man}
+    \label{fig:camera_low_pass}
+\end{figure}
 
 \subsubsection*{b)}
+The image convolution process for the gaussian kernel can be seen from \cref{fig:camera_gaussian}, and the image convolution process for the horizontal sobel filter can be seen from \cref{fig:camera_sobelx}
 
+\begin{figure}[]
+    \centering
+    \includegraphics[width=1.00\textwidth]{figures/image_processed/camera_gaussian_subplots.png}
+    \caption{Gaussian filtered camera man}
+    \label{fig:camera_gaussian}
+\end{figure}
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=1.00\textwidth]{figures/image_processed/camera_sobelx_subplots.png}
+    \caption{Horizontal sobel filtered camera man}
+    \label{fig:camera_sobelx}
+\end{figure}
+
+\subsubsection*{c)}
+The image convolution process for the mystery-filtering can be seen from \cref{fig:clown_filtered}. It is pretty simple to see that this filter removes certain filter-bands, which implies that this is a combination of a four notch filters, or inverse bandpass filters. This then \textit{removes} certain bands of frequencies along the x-axis and y-axis. 
+
+From the Fourier transform of the image, we can see that certain frequencies are very prevalent, and this filter removes those specific points. These were the primary causes for the picture being so wave-y before applying the filter. 
+
+To conclude, I'd call this filter a notch filter (or more accurately a combination of four notch filters). 
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=1.00\textwidth]{figures/image_processed/clown_filtered_subplots.png}
+    \caption{Mystery-filtered clown (notch filter)}
+    \label{fig:clown_filtered}
+\end{figure}
+
+\subsubsection*{d)}
+See the sharpened image from \cref{fig:moon_sharpened}.
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=1.00\textwidth]{figures/image_processed/moon_sharpened.png}
+    \caption{The original and the sharpened image}
+    \label{fig:moon_sharpened}
+\end{figure}
