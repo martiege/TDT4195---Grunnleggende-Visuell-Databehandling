@@ -3,6 +3,7 @@
 \subsubsection*{a)}
 From the convolution theorem, we can see that the Fourier transform of a convolution of two signals is multiplication of the Fourier transforms of those individual signals. So a stepwise description would be: 
 \begin{itemize}
+    \item Ensure the signals are of the same size using padding (zero padding)
     \item Find the Fourier transform of the individual signals (i.e. using FFT)
     \item Pointwise multiply the transformed signals
     \item Use inverse Fourier transform to find the convolution of the original signals
