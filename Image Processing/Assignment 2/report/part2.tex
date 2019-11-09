@@ -3,15 +3,16 @@
 \subsubsection*{a)}
 From the convolution theorem, we can see that the Fourier transform of a convolution of two signals is multiplication of the Fourier transforms of those individual signals. So a stepwise description would be: 
 \begin{itemize}
+    \item Ensure the signals are of the same size using padding (zero padding)
     \item Find the Fourier transform of the individual signals (i.e. using FFT)
     \item Pointwise multiply the transformed signals
     \item Use inverse Fourier transform to find the convolution of the original signals
 \end{itemize}
 
 \subsubsection*{b)}
-Low- and high-pass filters tell us which frequencies should be kept, low-pass allows low frequencies to pass, and high-pass allows high frequencies to pass. 
+Low- and high-pass filters tell us which frequencies should be kept, low-pass allows low frequencies to pass, and high-pass allows high frequencies to pass. Both then removes the frequencies not allowed to pass. 
 
-This means that low-pass filters should be close to the filter gain (i.e. 1) frequencies closer to the origin than the cut-off frequency (low frequencies), and should be close to zero for higher frequencies than the cut-off frequency. Depending on how we want the filter to behave, the filter can either be similar to a cylinder or a cone, where cylinder gives a much \textit{harsher} cut-off frequency (no frequencies after cut-off) and cone gives a \textit{smoother} cut-off frequency (allowing, but suppressing some frequencies after cut-off). 
+This means that low-pass filters should be close to the filter gain (i.e. 1) for frequencies closer to the origin than the cut-off frequency (low frequencies), and should be close to zero for higher frequencies than the cut-off frequency. Depending on how we want the filter to behave, the filter can either be similar to a cylinder or a cone, where cylinder gives a much \textit{harsher} cut-off frequency (no frequencies after cut-off) and cone gives a \textit{smoother} cut-off frequency (allowing, but suppressing some frequencies after cut-off). 
 
 The high-pass filter is simply the $K - LPF$, where $K$ is the filter gain (i.e. 1 again) and $LPF$ is the low-pass filter. This implies that the high-pass filter follows the same pattern as the low-pass, but where the low-pass filter includes frequencies, the high-pass filter removes them, and vice versa where the high-pass includes the frequencies. 
 
