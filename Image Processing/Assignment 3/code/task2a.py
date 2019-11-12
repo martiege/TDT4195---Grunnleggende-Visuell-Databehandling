@@ -91,7 +91,7 @@ def otsu_thresholding(im: np.ndarray) -> int:
     # measure, eta_star, by evaluating Eq. (10-61) with k = k_star
     sigma_G2 = lower_cu_sum(L, p, lambda i, p_i: (i - m_G)**2 * p_i)
     eta = sigma_B2 / sigma_G2
-    eta_star = eta(k_star)
+    eta_star = eta[k_star]
 
     threshold = k_star
     return threshold
