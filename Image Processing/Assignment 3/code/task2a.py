@@ -47,19 +47,19 @@ def otsu_thresholding(im: np.ndarray) -> int:
         map(lambda k: lower_cu_sum(k + 1, p, lambda i, p_i: p_i), range(L)), 
         np.float
     )
-    P_2 = np.fromiter(
-        map(lambda k: upper_cu_sum(k + 1, p, lambda i, p_i: p_i), range(L)), 
-        np.float
-    )
+    # P_2 = np.fromiter(
+    #     map(lambda k: upper_cu_sum(k + 1, p, lambda i, p_i: p_i), range(L)), 
+    #     np.float
+    # )
 
-    m_1 = (1 / P_1) * np.fromiter(
-        map(lambda k: lower_cu_sum(k + 1, p, lambda i, p_i: i * p_i), range(L)),
-        np.float
-    )
-    m_2 = (1 / P_2) * np.fromiter(
-        map(lambda k: upper_cu_sum(k + 1, p, lambda i, p_i: i * p_i), range(L)),
-        np.float
-    )
+    # m_1 = np.divide(1, P_1, out=0, where=P_1!=0) * np.fromiter(
+    #     map(lambda k: lower_cu_sum(k + 1, p, lambda i, p_i: i * p_i), range(L)),
+    #     np.float
+    # )
+    # m_2 = np.divide(1, P_2, out=0, where=P_2!=0) * np.fromiter(
+    #     map(lambda k: upper_cu_sum(k + 1, p, lambda i, p_i: i * p_i), range(L)),
+    #     np.float
+    # )
 
     # 3. Compute the cumulative means, m(k), for k = 0, 1, 2, ..., L - 1, 
     # using Eq. (10-53)
@@ -70,15 +70,15 @@ def otsu_thresholding(im: np.ndarray) -> int:
     # 4. Compute the global mean, m_G, using Eq. (10-54)
     m_G = lower_cu_sum(L - 1, p, lambda i, p_i: i * p_i)
 
-    assert((P_1 * m_1 + P_2 * m_2 == m_G).any())
-    assert(P_1 + P_2 == 1)
+    # assert((P_1 * m_1 + P_2 * m_2 == m_G).any())
+    # assert(P_1 + P_2 == 1)
 
     # 5. Compute the between-class variance term, sigma_B2(k), for k = 0, 1, 2, ..., L - 1
     # using Eq. (10-62)
-    sigma_B2 = P_1 * (m_1 - m_G)**2 + P_2 * (m_2 - m_G)**2
+    sigma_B2 = (m_G * P_1 - m)**2 / (P_1 * (1 - P_1))
 
-    assert(sigma_B2 == P_1 * P_2 * (m_1 - m_2)**2)
-    assert(sigma_B2 == ((m_G * P_1 - m)**2 / (P_1 * (1 - P_1))))
+    # assert(sigma_B2 == P_1 * P_2 * (m_1 - m_2)**2)
+    # assert(sigma_B2 == ((m_G * P_1 - m)**2 / (P_1 * (1 - P_1))))
 
     # 6. Obtain the Otsu threshold, k_star, as the value of k for which sigma_B2(k) is maximum.
     # If the maximum is not unique, obtain k_star by averaging the values of k corresponding to 
