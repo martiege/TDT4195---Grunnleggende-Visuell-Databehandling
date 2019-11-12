@@ -75,7 +75,9 @@ def otsu_thresholding(im: np.ndarray) -> int:
 
     # 5. Compute the between-class variance term, sigma_B2(k), for k = 0, 1, 2, ..., L - 1
     # using Eq. (10-62)
-    sigma_B2 = (m_G * P_1 - m)**2 / (P_1 * (1 - P_1))
+    numerator   = (m_G * P_1 - m)**2
+    denominator = P_1 * (1 - P_1)
+    sigma_B2 = np.divide(numerator, denominator, out=0, where=denominator!=0)
 
     # assert(sigma_B2 == P_1 * P_2 * (m_1 - m_2)**2)
     # assert(sigma_B2 == ((m_G * P_1 - m)**2 / (P_1 * (1 - P_1))))
