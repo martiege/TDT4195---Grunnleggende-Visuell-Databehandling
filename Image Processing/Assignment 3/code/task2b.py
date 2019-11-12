@@ -2,6 +2,20 @@ import utils
 import numpy as np
 
 
+def valid_neighbourhood(im, segmented, intensity, x, y, T):
+    (H, W) = im.shape
+
+    for x_n in range(x - 1, x + 2):
+        for y_n in range(y - 1, y + 2):
+            x_check = (x_n < W) and (x_n >= 0) and (x_n != x)
+            y_check = (y_n < H) and (y_n >= 0) and (y_n != y)
+            if x_check and y_check:
+                valid_intensity = (np.abs(im[y_n, x_n] - intensity) <= T)
+                if (not segmented[y_n, x_n]) and valid_intensity:
+                    segmented[y_n, x_n] = True 
+                    valid_neighbourhood(im, segmented, intensity, x_n, y_n, T)
+
+
 def region_growing(im: np.ndarray, seed_points: list, T: int) -> np.ndarray:
     """
         A region growing algorithm that segments an image into 1 or 0 (True or False).
@@ -22,6 +36,7 @@ def region_growing(im: np.ndarray, seed_points: list, T: int) -> np.ndarray:
     segmented = np.zeros_like(im).astype(bool)
     for row, col in seed_points:
         segmented[row, col] = True
+        valid_neighbourhood(im, segmented, im[row, col], col, row, T)
     return segmented
     ### END YOUR CODE HERE ### 
 
