@@ -70,13 +70,12 @@ def otsu_thresholding(im: np.ndarray) -> int:
     # 4. Compute the global mean, m_G, using Eq. (10-54)
     m_G = lower_cu_sum(L - 1, p, lambda i, p_i: i * p_i)
 
-    assert(P_1 * m_1 + P_2 * m_2 == m_G)
+    assert((P_1 * m_1 + P_2 * m_2 == m_G).any())
     assert(P_1 + P_2 == 1)
 
     # 5. Compute the between-class variance term, sigma_B2(k), for k = 0, 1, 2, ..., L - 1
     # using Eq. (10-62)
     sigma_B2 = P_1 * (m_1 - m_G)**2 + P_2 * (m_2 - m_G)**2
-    sigma_G2 = lower_cu_sum(L, p, lambda i, p_i: (i - m_G)**2 * p_i)
 
     assert(sigma_B2 == P_1 * P_2 * (m_1 - m_2)**2)
     assert(sigma_B2 == ((m_G * P_1 - m)**2 / (P_1 * (1 - P_1))))
@@ -84,22 +83,17 @@ def otsu_thresholding(im: np.ndarray) -> int:
     # 6. Obtain the Otsu threshold, k_star, as the value of k for which sigma_B2(k) is maximum.
     # If the maximum is not unique, obtain k_star by averaging the values of k corresponding to 
     # the various maxima detected.
+    k_star_max = np.amax(sigma_B2)
+    k_star_lst = np.argwhere(sigma_B2 == k_star_max).flatten().tolist()
+    k_star = np.floor_divide(np.sum(k_star_lst), len(k_star_lst))
 
     # 7. Compute the global variance, sigma_G2, using Eq. (10-58), and then obtain the separability 
     # measure, eta_star, by evaluating Eq. (10-61) with k = k_star
+    sigma_G2 = lower_cu_sum(L, p, lambda i, p_i: (i - m_G)**2 * p_i)
+    eta = sigma_B2 / sigma_G2
+    eta_star = eta(k_star)
 
-
-# >>> import numpy as np
-# >>> listy = [7, 6, 5, 7, 6, 7, 6, 6, 6, 4, 5, 6]
-# >>> winner = np.argwhere(listy == np.amax(listy))
-# >>> print(winner)
-#  [[0]
-#   [3]
-#   [5]]
-# >>> print(winner.flatten().tolist()) # if you want it as a list
-# [0, 3, 5]
-
-    threshold = 128
+    threshold = k_star
     return threshold
     ### END YOUR CODE HERE ### 
 
