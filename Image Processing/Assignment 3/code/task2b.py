@@ -7,11 +7,12 @@ def valid_neighbourhood(im, segmented, intensity, x, y, T):
 
     for x_n in range(x - 1, x + 2):
         for y_n in range(y - 1, y + 2):
-            x_check = (x_n < W) and (x_n >= 0) and (x_n != x)
+            x_check = (x_n < W) and (x_n >= 0)
             y_check = (y_n < H) and (y_n >= 0) and (y_n != y)
-            if x_check and y_check:
+            centre  = (x_n == x) and (y_n == y)
+            if x_check and y_check and not centre:
                 valid_intensity = (np.abs(im[y_n, x_n] - intensity) <= T)
-                if (not segmented[y_n, x_n]) and valid_intensity:
+                if not segmented[y_n, x_n] and valid_intensity:
                     segmented[y_n, x_n] = True 
                     valid_neighbourhood(im, segmented, intensity, x_n, y_n, T)
 
