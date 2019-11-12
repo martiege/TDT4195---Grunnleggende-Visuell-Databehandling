@@ -4,7 +4,7 @@ import utils
 import pathlib
 
 
-def lower_cu_sum(upper_limit, array, element_function)):
+def lower_cu_sum(upper_limit, array, element_function):
     c_sum = 0
     for i in range(0, upper_limit):
         c_sum += element_function(i, array[i])
@@ -12,7 +12,6 @@ def lower_cu_sum(upper_limit, array, element_function)):
     return c_sum
 
 def upper_cu_sum(lower_limit, array, element_function):
-    (k, array, element_function) = args
     (L,) = array.shape
     c_sum = 0
     for i in range(lower_limit, L):
@@ -33,14 +32,17 @@ def otsu_thresholding(im: np.ndarray) -> int:
     assert im.dtype == np.uint8
     ### START YOUR CODE HERE ### (You can change anything inside this block) 
     # You can also define other helper functions
-    # Compute normalized histogram
     (H, W)  = im.shape
     L       = 256
 
+    # 1. Compute the normalized histogram of the input image. 
+    # Denote the components of the histogram by p_i, i = 0, 1, 2, ..., L - 1
     (hist, _) = np.histogram(im, L, (0, L - 1))
     p = hist / np.sum(hist)
     assert(np.sum(p) == 1)
 
+    # 2. Compute the cumulative sums, P_1(k), for k = 0, 1, 2, ..., L - 1
+    # using Eq. (10-49)
     P_1 = np.fromiter(
         map(lambda k: lower_cu_sum(k + 1, p, lambda i, p_i: p_i), range(L)), 
         np.float
@@ -58,20 +60,44 @@ def otsu_thresholding(im: np.ndarray) -> int:
         map(lambda k: upper_cu_sum(k + 1, p, lambda i, p_i: i * p_i), range(L)),
         np.float
     )
+
+    # 3. Compute the cumulative means, m(k), for k = 0, 1, 2, ..., L - 1, 
+    # using Eq. (10-53)
     m   = np.fromiter(
         map(lambda k: lower_cu_sum(k + 1, p, lambda i, p_i: i * p_i), range(L)),
         np.float
     )
+    # 4. Compute the global mean, m_G, using Eq. (10-54)
     m_G = lower_cu_sum(L - 1, p, lambda i, p_i: i * p_i)
 
     assert(P_1 * m_1 + P_2 * m_2 == m_G)
     assert(P_1 + P_2 == 1)
 
-    sigma_G2 = lower_cu_sum(L, p, lambda i, p_1: (i - m_G)**2 * p_i)
+    # 5. Compute the between-class variance term, sigma_B2(k), for k = 0, 1, 2, ..., L - 1
+    # using Eq. (10-62)
     sigma_B2 = P_1 * (m_1 - m_G)**2 + P_2 * (m_2 - m_G)**2
+    sigma_G2 = lower_cu_sum(L, p, lambda i, p_i: (i - m_G)**2 * p_i)
 
     assert(sigma_B2 == P_1 * P_2 * (m_1 - m_2)**2)
     assert(sigma_B2 == ((m_G * P_1 - m)**2 / (P_1 * (1 - P_1))))
+
+    # 6. Obtain the Otsu threshold, k_star, as the value of k for which sigma_B2(k) is maximum.
+    # If the maximum is not unique, obtain k_star by averaging the values of k corresponding to 
+    # the various maxima detected.
+
+    # 7. Compute the global variance, sigma_G2, using Eq. (10-58), and then obtain the separability 
+    # measure, eta_star, by evaluating Eq. (10-61) with k = k_star
+
+
+# >>> import numpy as np
+# >>> listy = [7, 6, 5, 7, 6, 7, 6, 6, 6, 4, 5, 6]
+# >>> winner = np.argwhere(listy == np.amax(listy))
+# >>> print(winner)
+#  [[0]
+#   [3]
+#   [5]]
+# >>> print(winner.flatten().tolist()) # if you want it as a list
+# [0, 3, 5]
 
     threshold = 128
     return threshold
