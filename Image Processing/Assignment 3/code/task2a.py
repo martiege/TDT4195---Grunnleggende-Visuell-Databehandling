@@ -4,6 +4,22 @@ import utils
 import pathlib
 
 
+def lower_cu_sum(upper_limit, array, element_function)):
+    c_sum = 0
+    for i in range(0, upper_limit):
+        c_sum += element_function(i, array[i])
+    
+    return c_sum
+
+def upper_cu_sum(lower_limit, array, element_function):
+    (k, array, element_function) = args
+    (L,) = array.shape
+    c_sum = 0
+    for i in range(lower_limit, L):
+        c_sum += element_function(i, array[i])
+    
+    return c_sum
+
 def otsu_thresholding(im: np.ndarray) -> int:
     """
         Otsu's thresholding algorithm that segments an image into 1 or 0 (True or False)
@@ -18,6 +34,45 @@ def otsu_thresholding(im: np.ndarray) -> int:
     ### START YOUR CODE HERE ### (You can change anything inside this block) 
     # You can also define other helper functions
     # Compute normalized histogram
+    (H, W)  = im.shape
+    L       = 256
+
+    (hist, _) = np.histogram(im, L, (0, L - 1))
+    p = hist / np.sum(hist)
+    assert(np.sum(p) == 1)
+
+    P_1 = np.fromiter(
+        map(lambda k: lower_cu_sum(k + 1, p, lambda i, p_i: p_i), range(L)), 
+        np.float
+    )
+    P_2 = np.fromiter(
+        map(lambda k: upper_cu_sum(k + 1, p, lambda i, p_i: p_i), range(L)), 
+        np.float
+    )
+
+    m_1 = (1 / P_1) * np.fromiter(
+        map(lambda k: lower_cu_sum(k + 1, p, lambda i, p_i: i * p_i), range(L)),
+        np.float
+    )
+    m_2 = (1 / P_2) * np.fromiter(
+        map(lambda k: upper_cu_sum(k + 1, p, lambda i, p_i: i * p_i), range(L)),
+        np.float
+    )
+    m   = np.fromiter(
+        map(lambda k: lower_cu_sum(k + 1, p, lambda i, p_i: i * p_i), range(L)),
+        np.float
+    )
+    m_G = lower_cu_sum(L - 1, p, lambda i, p_i: i * p_i)
+
+    assert(P_1 * m_1 + P_2 * m_2 == m_G)
+    assert(P_1 + P_2 == 1)
+
+    sigma_G2 = lower_cu_sum(L, p, lambda i, p_1: (i - m_G)**2 * p_i)
+    sigma_B2 = P_1 * (m_1 - m_G)**2 + P_2 * (m_2 - m_G)**2
+
+    assert(sigma_B2 == P_1 * P_2 * (m_1 - m_2)**2)
+    assert(sigma_B2 == ((m_G * P_1 - m)**2 / (P_1 * (1 - P_1))))
+
     threshold = 128
     return threshold
     ### END YOUR CODE HERE ### 
