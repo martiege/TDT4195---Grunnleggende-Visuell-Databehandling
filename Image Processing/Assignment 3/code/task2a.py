@@ -87,11 +87,15 @@ def otsu_thresholding(im: np.ndarray) -> int:
     k_star_lst = np.argwhere(sigma_B2 == k_star_max).flatten().tolist()
     k_star = np.floor_divide(np.sum(k_star_lst), len(k_star_lst))
 
+    print(k_star)
+
     # 7. Compute the global variance, sigma_G2, using Eq. (10-58), and then obtain the separability 
     # measure, eta_star, by evaluating Eq. (10-61) with k = k_star
     sigma_G2 = lower_cu_sum(L, p, lambda i, p_i: (i - m_G)**2 * p_i)
     eta = sigma_B2 / sigma_G2
-    eta_star = eta[k_star]
+    print(eta)
+    print(eta.shape)
+    # eta_star = eta[k_star]
 
     threshold = k_star
     return threshold
