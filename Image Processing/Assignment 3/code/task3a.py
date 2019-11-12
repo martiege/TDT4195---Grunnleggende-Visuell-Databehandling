@@ -14,7 +14,17 @@ def remove_noise(im: np.ndarray) -> np.ndarray:
     """
     ### START YOUR CODE HERE ### (You can change anything inside this block)
     # You can also define other helper functions
-    return im
+    B = np.ones((3, 3), dtype=bool)
+
+    ero = skimage.morphology.binary_erosion(im)
+
+    ope = skimage.morphology.binary_opening(ero)
+
+    dil = skimage.morphology.binary_dilation(ope)
+
+    clo = skimage.morphology.binary_closing(dil)
+
+    return clo
     ### END YOUR CODE HERE ### 
 
 
