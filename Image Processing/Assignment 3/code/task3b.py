@@ -17,12 +17,23 @@ def distance_transform(im: np.ndarray) -> np.ndarray:
     ### START YOUR CODE HERE ### (You can change anything inside this block)
     # You can also define other helper functions
     assert im.dtype == np.bool
+    
+    L = 256
     structuring_element = np.array([
         [1, 1, 1],
         [1, 1, 1],
         [1, 1, 1]
     ], dtype=bool)
-    result = im.astype(np.int32)
+    result = np.zeros_like(im, dtype=np.int32)
+    eroded = im.copy()
+
+    for i in range(L):
+        eroded_prev = eroded.copy()
+        skimage.morphology.binary_erosion(eroded_prev, selem=structuring_element, out=eroded)
+        # each "surviving" pixel is counted
+        result += eroded 
+        # result += np.logical_xor(eroded_prev, eroded) * i
+
     return result
     ### END YOUR CODE HERE ### 
 
