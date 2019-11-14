@@ -1,4 +1,4 @@
-\section{Task1: Theory}
+\section{Task 1: Theory}
 \subsection*{a)}
 Opening can be defined as: 
 \begin{equation}
@@ -12,7 +12,11 @@ Closing can be defined as:
 \end{equation}
 Or, first applying a dilation, then applying a erosion using the same structuring element on the image. 
 
-% applying multiple times
+After the first opening or closing, applying more openings or closings will not have any effect on the same image as you will inevitably erode and dilate the same shape each time. 
+
+As an example, consider opening. First we use erosion with the structuring element to \textit{remove} unwanted parts of the image. Then we use dilation to \textit{increase} the parts of the image that were unnecessarily removed. 
+
+Then, if we apply another opening, we start by applying the same erosion again. Then the dilation of the first opening will have had no effect, as it will be entirely removed by the erosion. Finally, using dilation again we are back at the result from 
 
 \subsection*{b)}
 This is because the edge detection (and derivatives in general) enhance noise, making it virtually impossible to detect edges on a noisy image. Therefore it would be necessary to apply smoothing to the image before we can detect any edges. See \cref{fig:noisy_edge} for 
@@ -31,7 +35,7 @@ Rather than using a single threshold, we use two thresholds, one lower and one h
 We use hysteresis thresholding instead of a single threshold because we want to link the edges. 
 
 \subsection*{e)}
-Reflecting $B$ has no effect. Centre has been highlighted with bold. 
+Reflecting $B$ has no effect. Centre has been highlighted with bold. Values outside A was handled as zeros. 
 
 \begin{align*}
     A &= \begin{bmatrix}
@@ -56,12 +60,12 @@ Reflecting $B$ has no effect. Centre has been highlighted with bold.
         1 & \mathbf{1} & 1
     \end{bmatrix} \\ 
     &= \begin{bmatrix}
-        0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-        1 & 1 & 1 & 0 & 1 & 1 & 1 & 0 \\
-        0 & 1 & 1 & 1 & 1 & 1 & 0 & 0 \\ 
-        1 & 1 & 1 & 0 & 1 & 1 & 1 & 0 \\ 
-        0 & 0 & 1 & 1 & 1 & 0 & 0 & 0 \\ 
-        0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 
+        0 & 0 & 0 & 0 & 0 & 0 \\
+        1 & 1 & 0 & 1 & 1 & 1 \\
+        1 & 1 & 1 & 1 & 1 & 0 \\ 
+        1 & 1 & 0 & 1 & 1 & 1 \\ 
+        0 & 1 & 1 & 1 & 0 & 0 \\ 
+        0 & 0 & 0 & 0 & 0 & 0 
     \end{bmatrix}
 \end{align*}
 
