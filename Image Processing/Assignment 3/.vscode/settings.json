@@ -4,5 +4,6 @@
         "dtype",
         "otsu",
         "thresholding"
-    ]
+    ],
+    "python.pythonPath": "/usr/bin/python3"
 }

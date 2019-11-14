@@ -5,16 +5,22 @@ import numpy as np
 def valid_neighbourhood(im, segmented, intensity, x, y, T):
     (H, W) = im.shape
 
-    for x_n in range(x - 1, x + 2):
-        for y_n in range(y - 1, y + 2):
-            x_check = (x_n < W) and (x_n >= 0)
-            y_check = (y_n < H) and (y_n >= 0) and (y_n != y)
-            centre  = (x_n == x) and (y_n == y)
-            if x_check and y_check and not centre:
-                valid_intensity = (np.abs(im[y_n, x_n] - intensity) <= T)
-                if not segmented[y_n, x_n] and valid_intensity:
-                    segmented[y_n, x_n] = True 
-                    valid_neighbourhood(im, segmented, intensity, x_n, y_n, T)
+    for x_n, y_n in generate_neighbourhood(x, y, H, W):
+        valid_intensity = (np.abs(im[y_n, x_n] - intensity) <= T)
+        if not segmented[y_n, x_n] and valid_intensity:
+            segmented[y_n, x_n] = True 
+            valid_neighbourhood(im, segmented, intensity, x_n, y_n, T)
+
+    # for x_n in range(x - 1, x + 2):
+    #     for y_n in range(y - 1, y + 2):
+    #         x_check = (x_n < W) and (x_n >= 0)
+    #         y_check = (y_n < H) and (y_n >= 0)
+    #         centre  = (x_n == x) and (y_n == y)
+    #         if x_check and y_check and not centre:
+    #             valid_intensity = (np.abs(im[y_n, x_n] - intensity) <= T)
+    #             if not segmented[y_n, x_n] and valid_intensity:
+    #                 segmented[y_n, x_n] = True 
+    #                 valid_neighbourhood(im, segmented, intensity, x_n, y_n, T)
 
 
 def inside_image(c, H, W):
@@ -50,17 +56,19 @@ def region_growing(im: np.ndarray, seed_points: list, T: int) -> np.ndarray:
 
     segmented = np.zeros_like(im).astype(bool)
     for row, col in seed_points:
-        segmented[row, col] = True
-        active = generate_neighbourhood(col, row, H, W)
-        while len(active) != 0:
-            (x, y) = active.pop()
-            if np.abs(im[y, x] - im[row, col]) <= T:
-                segmented[y, x] = True
-                new_active = generate_neighbourhood(x, y, H, W)
-                for coordinate in new_active: 
-                    if coordinate not in active:
-                        active.append(coordinate)
+        # segmented[row, col] = True
+        # active = generate_neighbourhood(col, row, H, W)
+        # while len(active) != 0:
+        #     (x, y) = active.pop()
+        #     if np.abs(im[y, x] - im[row, col]) <= T:
+        #         segmented[y, x] = True
+        #         new_active = generate_neighbourhood(x, y, H, W)
+        #         for coordinate in new_active: 
+        #             if coordinate not in active:
+        #                 active.append(coordinate)
 
+        # tried recursion, didn't completely fill the proper regions
+        # any feedback on what went wrong?
         # valid_neighbourhood(im, segmented, im[row, col], col, row, T)
     return segmented
     ### END YOUR CODE HERE ### 

@@ -15,14 +15,11 @@ def remove_noise(im: np.ndarray) -> np.ndarray:
     ### START YOUR CODE HERE ### (You can change anything inside this block)
     # You can also define other helper functions
     
-    # 16
-    im = skimage.morphology.binary_opening(im, np.array([
-        [0, 0, 1, 0, 0], 
-        [0, 1, 1, 1, 0], 
-        [1, 1, 1, 1, 1], 
-        [0, 1, 1, 1, 0], 
-        [0, 0, 1, 0, 0]
-    ]))
+    # filtering with a disk with radius 7. 
+    # this is the smallest that won't ruin the triangle shape, 
+    # and the largest that will remove all noise outside the triangle shape
+    skimage.morphology.binary_opening(im, selem=skimage.morphology.disk(7), out=im)
+    skimage.morphology.binary_closing(im, selem=skimage.morphology.disk(7), out=im)
 
     return im
     ### END YOUR CODE HERE ### 
