@@ -17,6 +17,18 @@ def valid_neighbourhood(im, segmented, intensity, x, y, T):
                     valid_neighbourhood(im, segmented, intensity, x_n, y_n, T)
 
 
+def inside_image(c, H, W):
+    return c[0] < W and c[0] >= 0 and c[1] < H and c[1] >= 0
+
+def generate_neighbourhood(x, y, H, W):
+    return list(filter(lambda coordinate: inside_image(coordinate, H, W), 
+        [
+            (x - 1, y + 1), (x, y + 1), (x + 1, y + 1), 
+            (x - 1, y),                 (x + 1, y), 
+            (x - 1, y - 1), (x, y - 1), (x + 1, y - 1)
+        ]
+    ))
+
 def region_growing(im: np.ndarray, seed_points: list, T: int) -> np.ndarray:
     """
         A region growing algorithm that segments an image into 1 or 0 (True or False).
@@ -34,10 +46,22 @@ def region_growing(im: np.ndarray, seed_points: list, T: int) -> np.ndarray:
     """
     ### START YOUR CODE HERE ### (You can change anything inside this block)
     # You can also define other helper functions
+    (H, W) = im.shape
+
     segmented = np.zeros_like(im).astype(bool)
     for row, col in seed_points:
         segmented[row, col] = True
-        valid_neighbourhood(im, segmented, im[row, col], col, row, T)
+        active = generate_neighbourhood(col, row, H, W)
+        while len(active) != 0:
+            (x, y) = active.pop()
+            if np.abs(im[y, x] - im[row, col]) <= T:
+                segmented[y, x] = True
+                new_active = generate_neighbourhood(x, y, H, W)
+                for coordinate in new_active: 
+                    if coordinate not in active:
+                        active.append(coordinate)
+
+        # valid_neighbourhood(im, segmented, im[row, col], col, row, T)
     return segmented
     ### END YOUR CODE HERE ### 
 

@@ -26,6 +26,10 @@ def fill_holes(im: np.ndarray, starting_points: list, num_iterations: int) -> np
         [1, 1, 1]
     ], dtype=bool)
     result = im.copy()
+
+    x = [np.zeros_like(im, dtype=bool)]
+    
+
     return result
     ### END YOUR CODE HERE ### 
 

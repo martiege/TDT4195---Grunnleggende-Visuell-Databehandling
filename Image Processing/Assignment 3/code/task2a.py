@@ -35,21 +35,22 @@ def otsu_thresholding(im: np.ndarray) -> int:
     L = 256
 
     # 1. Compute the normalized histogram of the input image. 
-    # Denote the components of the histogram by p_i, i = 0, 1, 2, ..., L - 1
+    # Denote the components of the histogram by p_i, 
+    # i = 0, 1, 2, ..., L - 1
     (hist, _) = np.histogram(im, L, (0, L - 1))
     p = hist / np.sum(hist)
     assert(np.sum(p) == 1)
 
-    # 2. Compute the cumulative sums, P_1(k), for k = 0, 1, 2, ..., L - 1
-    # using Eq. (10-49)
+    # 2. Compute the cumulative sums, P_1(k), 
+    # for k = 0, 1, 2, ..., L - 1, using Eq. (10-49)
     P_1 = np.fromiter(
         map(lambda k: lower_cu_sum(k + 1, p, lambda i, p_i: p_i), range(L)), 
         np.float
     )
 
-    # 3. Compute the cumulative means, m(k), for k = 0, 1, 2, ..., L - 1, 
-    # using Eq. (10-53)
-    m   = np.fromiter(
+    # 3. Compute the cumulative means, m(k), 
+    # for k = 0, 1, 2, ..., L - 1, using Eq. (10-53)
+    m = np.fromiter(
         map(lambda k: lower_cu_sum(k + 1, p, lambda i, p_i: i * p_i), range(L)),
         np.float
     )
@@ -57,15 +58,17 @@ def otsu_thresholding(im: np.ndarray) -> int:
     # 4. Compute the global mean, m_G, using Eq. (10-54)
     m_G = lower_cu_sum(L - 1, p, lambda i, p_i: i * p_i)
 
-    # 5. Compute the between-class variance term, sigma_B2(k), for k = 0, 1, 2, ..., L - 1
+    # 5. Compute the between-class variance term, sigma_B2(k), 
+    # for k = 0, 1, 2, ..., L - 1
     # using Eq. (10-62)
     numerator   = (m_G * P_1 - m)**2
     denominator = P_1 * (1 - P_1)
     sigma_B2 = np.divide(numerator, denominator, out=np.zeros_like(numerator), where=denominator!=0)
 
-    # 6. Obtain the Otsu threshold, k_star, as the value of k for which sigma_B2(k) is maximum.
-    # If the maximum is not unique, obtain k_star by averaging the values of k corresponding to 
-    # the various maxima detected.
+    # 6. Obtain the Otsu threshold, k_star, 
+    # as the value of k for which sigma_B2(k) is maximum.
+    # If the maximum is not unique, obtain k_star by averaging 
+    # the values of k corresponding to the various maxima detected.
     k_star_max = np.amax(sigma_B2)
     k_star_lst = np.argwhere(sigma_B2 == k_star_max).flatten().tolist()
     k_star = np.floor_divide(np.sum(k_star_lst), len(k_star_lst))
