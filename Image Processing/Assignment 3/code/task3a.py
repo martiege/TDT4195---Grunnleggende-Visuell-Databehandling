@@ -16,7 +16,7 @@ def remove_noise(im: np.ndarray) -> np.ndarray:
     # You can also define other helper functions
     # B = np.ones((5, 5), dtype=bool)
 
-    im = skimage.morphology.binary_erosion(im, np.ones((7, 7), dtype=bool))
+    im = skimage.morphology.binary_erosion(im, np.ones((15, 15), dtype=bool))
 
     # im = skimage.morphology.binary_opening(im)
     # im = skimage.morphology.binary_dilation(im)
