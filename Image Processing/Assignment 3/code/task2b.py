@@ -1,15 +1,28 @@
 import utils
 import numpy as np
 
+# Seed point: (233, 436)
+# Seed point intensity: 255
+# Position row: 239, col: 453: Image intensity: 255
+# Position row: 239, col: 454: Image intensity: 252
 
-def valid_neighbourhood(im, segmented, intensity, x, y, T):
+# Segmented Position row: 239, col: 453: Segmented Value: True
+# Segmented Position row: 239, col: 454: Segmented Value: False
+
+# Your segmented image in position (239, 454) should be True, but it is False.
+
+# I recommend you to debug your code for this special case.
+
+def valid_neighbourhood(im, segmented, intensity, x, y, T, verbose=False):
     (H, W) = im.shape
+
+    print("Column:", y, "Row:", x, "Intensity:", im[y, x])
 
     for x_n, y_n in generate_neighbourhood(x, y, H, W):
         valid_intensity = (np.abs(im[y_n, x_n] - intensity) <= T)
         if not segmented[y_n, x_n] and valid_intensity:
             segmented[y_n, x_n] = True 
-            valid_neighbourhood(im, segmented, intensity, x_n, y_n, T)
+            valid_neighbourhood(im, segmented, intensity, x_n, y_n, T, verbose=verbose)
 
 def inside_image(c, H, W):
     return c[0] < W and c[0] >= 0 and c[1] < H and c[1] >= 0
@@ -71,7 +84,7 @@ def region_growing(im: np.ndarray, seed_points: list, T: int) -> np.ndarray:
 
         # tried recursion, didn't completely fill the proper regions
         # any feedback on what went wrong?
-        valid_neighbourhood(im, segmented, im[row, col], col, row, T)
+        valid_neighbourhood(im, segmented, im[row, col], col, row, T, row == 233 and col == 436)
     return segmented
     ### END YOUR CODE HERE ### 
 
