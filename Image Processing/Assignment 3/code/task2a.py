@@ -19,6 +19,12 @@ def upper_cu_sum(lower_limit, array, element_function):
     
     return c_sum
 
+def zero_division(a, b): 
+    if np.abs(b) <= 1e-8:
+        return 0
+    else:
+        return a / b
+
 def otsu_thresholding(im: np.ndarray) -> int:
     """
         Otsu's thresholding algorithm that segments an image into 1 or 0 (True or False)
@@ -35,21 +41,22 @@ def otsu_thresholding(im: np.ndarray) -> int:
     L = 256
 
     # 1. Compute the normalized histogram of the input image. 
-    # Denote the components of the histogram by p_i, i = 0, 1, 2, ..., L - 1
+    # Denote the components of the histogram by p_i, 
+    # i = 0, 1, 2, ..., L - 1
     (hist, _) = np.histogram(im, L, (0, L - 1))
     p = hist / np.sum(hist)
     assert(np.sum(p) == 1)
 
-    # 2. Compute the cumulative sums, P_1(k), for k = 0, 1, 2, ..., L - 1
-    # using Eq. (10-49)
+    # 2. Compute the cumulative sums, P_1(k), 
+    # for k = 0, 1, 2, ..., L - 1, using Eq. (10-49)
     P_1 = np.fromiter(
         map(lambda k: lower_cu_sum(k + 1, p, lambda i, p_i: p_i), range(L)), 
         np.float
     )
 
-    # 3. Compute the cumulative means, m(k), for k = 0, 1, 2, ..., L - 1, 
-    # using Eq. (10-53)
-    m   = np.fromiter(
+    # 3. Compute the cumulative means, m(k), 
+    # for k = 0, 1, 2, ..., L - 1, using Eq. (10-53)
+    m = np.fromiter(
         map(lambda k: lower_cu_sum(k + 1, p, lambda i, p_i: i * p_i), range(L)),
         np.float
     )
@@ -57,24 +64,32 @@ def otsu_thresholding(im: np.ndarray) -> int:
     # 4. Compute the global mean, m_G, using Eq. (10-54)
     m_G = lower_cu_sum(L - 1, p, lambda i, p_i: i * p_i)
 
-    # 5. Compute the between-class variance term, sigma_B2(k), for k = 0, 1, 2, ..., L - 1
+    # 5. Compute the between-class variance term, sigma_B2(k), 
+    # for k = 0, 1, 2, ..., L - 1
     # using Eq. (10-62)
     numerator   = (m_G * P_1 - m)**2
     denominator = P_1 * (1 - P_1)
-    sigma_B2 = np.divide(numerator, denominator, out=np.zeros_like(numerator), where=denominator!=0)
+    sigma_B2 = np.fromiter(
+        map(lambda i: zero_division(numerator[i], denominator[i]), range(L)), 
+        float
+    )
+    # np.divide(numerator, denominator, out=np.zeros_like(numerator), where=denominator!=0)
 
-    # 6. Obtain the Otsu threshold, k_star, as the value of k for which sigma_B2(k) is maximum.
-    # If the maximum is not unique, obtain k_star by averaging the values of k corresponding to 
-    # the various maxima detected.
-    k_star_max = np.amax(sigma_B2)
-    k_star_lst = np.argwhere(sigma_B2 == k_star_max).flatten().tolist()
-    k_star = np.floor_divide(np.sum(k_star_lst), len(k_star_lst))
+    # 6. Obtain the Otsu threshold, k_star, 
+    # as the value of k for which sigma_B2(k) is maximum.
+    # If the maximum is not unique, obtain k_star by averaging 
+    # the values of k corresponding to the various maxima detected.
+    sigma_B2_max = np.amax(sigma_B2)
+    k_stars = [i for i, j in enumerate(sigma_B2) if j == sigma_B2_max]
+    k_star = int(sum(k_stars) / len(k_stars))
+    print(k_star)
 
     # 7. Compute the global variance, sigma_G2, using Eq. (10-58), and then obtain the separability 
     # measure, eta_star, by evaluating Eq. (10-61) with k = k_star
     sigma_G2 = lower_cu_sum(L, p, lambda i, p_i: (i - m_G)**2 * p_i)
     eta = sigma_B2 / sigma_G2
     eta_star = eta[k_star]
+    print(eta_star)
 
     threshold = k_star
     return threshold
