@@ -24,6 +24,7 @@ def valid_neighbourhood(im, segmented, intensity, x, y, T, verbose=False):
             print("This intensity:", im[y_n, x_n], "Seed intensity:", intensity)
             print("Difference:", im[y_n, x_n] - intensity, "Abs: ", np.abs(im[y_n, x_n] - intensity))
             print("T: ", T, "Less than T:", np.abs(im[y_n, x_n] - intensity) <= T, "Valid:", valid_intensity)
+            print("")
 
         if not segmented[y_n, x_n] and valid_intensity:
             segmented[y_n, x_n] = True 
