@@ -16,10 +16,13 @@ import numpy as np
 def valid_neighbourhood(im, segmented, intensity, x, y, T, verbose=False):
     (H, W) = im.shape
 
-    print("Column:", y, "Row:", x, "Intensity:", im[y, x])
-
     for x_n, y_n in generate_neighbourhood(x, y, H, W):
-        valid_intensity = (np.abs(im[y_n, x_n] - intensity) <= T)
+        valid_intensity = np.abs(im[y_n, x_n] - intensity) <= T
+
+        if verbose:
+            print("Column:", y_n, "Row:", x_n, "Intensity:", im[y_n, x_n])
+            print("Segmented:", segmented[y_n, x_n], "Valid intensity", valid_intensity)
+
         if not segmented[y_n, x_n] and valid_intensity:
             segmented[y_n, x_n] = True 
             valid_neighbourhood(im, segmented, intensity, x_n, y_n, T, verbose=verbose)
