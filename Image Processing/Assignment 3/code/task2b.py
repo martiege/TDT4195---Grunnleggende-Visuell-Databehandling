@@ -11,18 +11,6 @@ def valid_neighbourhood(im, segmented, intensity, x, y, T):
             segmented[y_n, x_n] = True 
             valid_neighbourhood(im, segmented, intensity, x_n, y_n, T)
 
-    # for x_n in range(x - 1, x + 2):
-    #     for y_n in range(y - 1, y + 2):
-    #         x_check = (x_n < W) and (x_n >= 0)
-    #         y_check = (y_n < H) and (y_n >= 0)
-    #         centre  = (x_n == x) and (y_n == y)
-    #         if x_check and y_check and not centre:
-    #             valid_intensity = (np.abs(im[y_n, x_n] - intensity) <= T)
-    #             if not segmented[y_n, x_n] and valid_intensity:
-    #                 segmented[y_n, x_n] = True 
-    #                 valid_neighbourhood(im, segmented, intensity, x_n, y_n, T)
-
-
 def inside_image(c, H, W):
     return c[0] < W and c[0] >= 0 and c[1] < H and c[1] >= 0
 
@@ -55,7 +43,21 @@ def region_growing(im: np.ndarray, seed_points: list, T: int) -> np.ndarray:
     (H, W) = im.shape
 
     segmented = np.zeros_like(im).astype(bool)
-    for row, col in seed_points:
+    processed = []
+    while(len(seed_points) > 0):
+        (row, col) = seed_points[0]
+        segmented[row, col] = True 
+      
+        neighbours = generate_neighbourhood(col, row, H, W)
+        for row_n, col_n in neighbours:
+            if np.abs(im[row_n, col_n] - im[row, col]) <= T:
+                segmented[row_n, col_n] = True
+                if not (row_n, col_n) in processed:
+                    seed_points.append((row_n, col_n))
+                processed.append((row_n, col_n))
+        seed_points.pop(0)
+
+    # for row, col in seed_points:
         # segmented[row, col] = True
         # active = generate_neighbourhood(col, row, H, W)
         # while len(active) != 0:
