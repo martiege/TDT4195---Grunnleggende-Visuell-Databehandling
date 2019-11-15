@@ -21,7 +21,7 @@ def valid_neighbourhood(im, segmented, intensity, x, y, T, verbose=False):
 
         if verbose:
             print("Column:", y_n, "Row:", x_n, "Intensity:", im[y_n, x_n])
-            print("Segmented:", segmented[y_n, x_n], "Valid intensity", valid_intensity)
+            print("T:", T, "Segmented:", segmented[y_n, x_n], "Valid intensity", valid_intensity)
 
         if not segmented[y_n, x_n] and valid_intensity:
             segmented[y_n, x_n] = True 
