@@ -43,21 +43,21 @@ def region_growing(im: np.ndarray, seed_points: list, T: int) -> np.ndarray:
     (H, W) = im.shape
 
     segmented = np.zeros_like(im).astype(bool)
-    processed = []
-    while(len(seed_points) > 0):
-        (row, col) = seed_points[0]
-        segmented[row, col] = True 
+    # processed = []
+    # while(len(seed_points) > 0):
+    #     (row, col) = seed_points[0]
+    #     segmented[row, col] = True 
       
-        neighbours = generate_neighbourhood(col, row, H, W)
-        for row_n, col_n in neighbours:
-            if np.abs(im[row_n, col_n] - im[row, col]) <= T:
-                segmented[row_n, col_n] = True
-                if not (row_n, col_n) in processed:
-                    seed_points.append((row_n, col_n))
-                processed.append((row_n, col_n))
-        seed_points.pop(0)
+    #     neighbours = generate_neighbourhood(col, row, H, W)
+    #     for row_n, col_n in neighbours:
+    #         if np.abs(im[row_n, col_n] - im[row, col]) <= T:
+    #             segmented[row_n, col_n] = True
+    #             if not (row_n, col_n) in processed:
+    #                 seed_points.append((row_n, col_n))
+    #             processed.append((row_n, col_n))
+    #     seed_points.pop(0)
 
-    # for row, col in seed_points:
+    for row, col in seed_points:
         # segmented[row, col] = True
         # active = generate_neighbourhood(col, row, H, W)
         # while len(active) != 0:
@@ -71,7 +71,7 @@ def region_growing(im: np.ndarray, seed_points: list, T: int) -> np.ndarray:
 
         # tried recursion, didn't completely fill the proper regions
         # any feedback on what went wrong?
-        # valid_neighbourhood(im, segmented, im[row, col], col, row, T)
+        valid_neighbourhood(im, segmented, im[row, col], col, row, T)
     return segmented
     ### END YOUR CODE HERE ### 
 
