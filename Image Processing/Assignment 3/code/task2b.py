@@ -17,7 +17,7 @@ def valid_neighbourhood(im, segmented, intensity, x, y, T, verbose=False):
     (H, W) = im.shape
 
     for x_n, y_n in generate_neighbourhood(x, y, H, W):
-        valid_intensity = np.abs(float(im[y_n, x_n]) - float(intensity)) <= T
+        valid_intensity = np.abs(im[y_n, x_n] - intensity) <= T
 
         if verbose:
             print("Column:", y_n, "Row:", x_n)
