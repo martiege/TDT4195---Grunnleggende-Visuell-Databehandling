@@ -1,9 +1,11 @@
 {
     "cSpell.words": [
+        "a",
         "astype",
         "dtype",
         "otsu",
-        "thresholding"
+        "thresholding",
+        "uint"
     ],
     "python.pythonPath": "/usr/bin/python3"
 }

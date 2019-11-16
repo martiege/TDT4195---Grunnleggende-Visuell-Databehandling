@@ -17,7 +17,7 @@ def valid_neighbourhood(im, segmented, intensity, x, y, T, verbose=False):
     (H, W) = im.shape
 
     for x_n, y_n in generate_neighbourhood(x, y, H, W):
-        valid_intensity = np.abs(intensity - im[y_n, x_n]) <= T
+        valid_intensity = safe_abs_diff(intensity, im[y_n, x_n]) <= T
 
         if verbose:
             print("Column:", y_n, "Row:", x_n)
@@ -29,6 +29,17 @@ def valid_neighbourhood(im, segmented, intensity, x, y, T, verbose=False):
         if not segmented[y_n, x_n] and valid_intensity:
             segmented[y_n, x_n] = True 
             valid_neighbourhood(im, segmented, intensity, x_n, y_n, T, verbose=verbose)
+
+def safe_abs_diff(uint_a, uint_b):
+    """
+        Computes the difference abs(uint_a - uint_b) safely 
+        for unsigned integers by always subtracting from the 
+        largest number.
+    """
+    if uint_a < uint_b: 
+        uint_a, uint_b = uint_b, uint_a 
+    return uint_a - uint_b
+
 
 def inside_image(c, H, W):
     return c[0] < W and c[0] >= 0 and c[1] < H and c[1] >= 0
@@ -62,35 +73,18 @@ def region_growing(im: np.ndarray, seed_points: list, T: int) -> np.ndarray:
     (H, W) = im.shape
 
     segmented = np.zeros_like(im).astype(bool)
-    # processed = []
-    # while(len(seed_points) > 0):
-    #     (row, col) = seed_points[0]
-    #     segmented[row, col] = True 
-      
-    #     neighbours = generate_neighbourhood(col, row, H, W)
-    #     for row_n, col_n in neighbours:
-    #         if np.abs(im[row_n, col_n] - im[row, col]) <= T:
-    #             segmented[row_n, col_n] = True
-    #             if not (row_n, col_n) in processed:
-    #                 seed_points.append((row_n, col_n))
-    #             processed.append((row_n, col_n))
-    #     seed_points.pop(0)
-
-    for row, col in seed_points:
-        # segmented[row, col] = True
-        # active = generate_neighbourhood(col, row, H, W)
-        # while len(active) != 0:
-        #     (x, y) = active.pop()
-        #     if np.abs(im[y, x] - im[row, col]) <= T:
-        #         segmented[y, x] = True
-        #         new_active = generate_neighbourhood(x, y, H, W)
-        #         for coordinate in new_active: 
-        #             if coordinate not in active:
-        #                 active.append(coordinate)
-
+    for row_seed, col_seed in seed_points:
+        active = [(row_seed, col_seed)]
+        seed_intensity = im[row_seed, col_seed]
+        while len(active) > 0:
+            row, col = active.pop(0)
+            if not segmented[row, col] and safe_abs_diff(seed_intensity, im[row, col]) <= T:
+                segmented[row, col] = True
+                active += generate_neighbourhood(col, row, H, W)
+                
         # tried recursion, didn't completely fill the proper regions
         # any feedback on what went wrong?
-        valid_neighbourhood(im, segmented, im[row, col], col, row, T, row == 233 and col == 436)
+        # valid_neighbourhood(im, segmented, im[row, col], col, row, T, row == 233 and col == 436)
     return segmented
     ### END YOUR CODE HERE ### 
 
