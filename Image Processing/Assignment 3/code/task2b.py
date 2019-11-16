@@ -80,7 +80,7 @@ def region_growing(im: np.ndarray, seed_points: list, T: int) -> np.ndarray:
             row, col = active.pop(0)
             if not segmented[row, col] and safe_abs_diff(seed_intensity, im[row, col]) <= T:
                 segmented[row, col] = True
-                active += generate_neighbourhood(col, row, H, W)
+                active += generate_neighbourhood(row, col, H, W)
                 
         # tried recursion, didn't completely fill the proper regions
         # any feedback on what went wrong?
