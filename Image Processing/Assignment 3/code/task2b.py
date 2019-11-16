@@ -1,55 +1,59 @@
 import utils
 import numpy as np
 
-# Seed point: (233, 436)
-# Seed point intensity: 255
-# Position row: 239, col: 453: Image intensity: 255
-# Position row: 239, col: 454: Image intensity: 252
-
-# Segmented Position row: 239, col: 453: Segmented Value: True
-# Segmented Position row: 239, col: 454: Segmented Value: False
-
-# Your segmented image in position (239, 454) should be True, but it is False.
-
-# I recommend you to debug your code for this special case.
-
-def valid_neighbourhood(im, segmented, intensity, x, y, T, verbose=False):
-    (H, W) = im.shape
-
-    for x_n, y_n in generate_neighbourhood(x, y, H, W):
-        valid_intensity = safe_abs_diff(intensity, im[y_n, x_n]) <= T
-
-        if verbose:
-            print("Column:", y_n, "Row:", x_n)
-            print("This intensity:", im[y_n, x_n], "Seed intensity:", intensity)
-            print("Difference:", intensity - im[y_n, x_n], "Abs: ", np.abs(intensity - im[y_n, x_n]))
-            print("T: ", T, "Less than T:", np.abs(intensity - im[y_n, x_n]) <= T, "Valid:", valid_intensity)
-            print("")
-
-        if not segmented[y_n, x_n] and valid_intensity:
-            segmented[y_n, x_n] = True 
-            valid_neighbourhood(im, segmented, intensity, x_n, y_n, T, verbose=verbose)
-
-def safe_abs_diff(uint_a, uint_b):
+def safe_abs_diff(a, b):
     """
-        Computes the difference abs(uint_a - uint_b) safely 
+        Computes the difference abs(a - b) safely 
         for unsigned integers by always subtracting from the 
         largest number.
+
+        args:
+            a: unsigned integer a (dtype=np.uint8)
+            b: unsigned integer b (dtype=np.uint8)
+        return: 
+            absolute value of the difference 
+            between a and b (dtype=np.uint8)
     """
-    if uint_a < uint_b: 
-        uint_a, uint_b = uint_b, uint_a 
-    return uint_a - uint_b
+    if a < b: 
+        a, b = b, a 
+    return a - b
 
 
-def inside_image(c, H, W):
-    return c[0] < W and c[0] >= 0 and c[1] < H and c[1] >= 0
+def inside_image(coordinate, H, W):
+    """
+        The function checks of a given coordinate is inside 
+        the region (0,0) to (H, W)
 
-def generate_neighbourhood(x, y, H, W):
+        args: 
+            coordinate: tuple of the form (row, col), gives the
+                        coordinates to be checked
+            H: height of the region
+            W: width of the region
+        returns: 
+            boolean, True if the coordinate is inside the region
+    """
+    (row, col) = coordinate
+    return col < W and col >= 0 and row < H and row >= 0
+
+def generate_neighbourhood(row, col, H, W):
+    """
+        This function generates Moore-neighbourhood 
+        (8-connectedness) which is valid within the region
+        (0, 0) to (H, W). 
+
+        args: 
+            row: integer, the given row to generate a neighbourhood around
+            col: integer, the given column to generate a neighbourhood around
+            H: height of the region
+            W: width of the region
+        returns: 
+            list of the valid neighbours of the input
+    """
     return list(filter(lambda coordinate: inside_image(coordinate, H, W), 
         [
-            (x - 1, y + 1), (x, y + 1), (x + 1, y + 1), 
-            (x - 1, y),                 (x + 1, y), 
-            (x - 1, y - 1), (x, y - 1), (x + 1, y - 1)
+            (row - 1, col + 1), (row, col + 1), (row + 1, col + 1), 
+            (row - 1, col),                     (row + 1, col), 
+            (row - 1, col - 1), (row, col - 1), (row + 1, col - 1)
         ]
     ))
 
@@ -81,10 +85,7 @@ def region_growing(im: np.ndarray, seed_points: list, T: int) -> np.ndarray:
             if not segmented[row, col] and safe_abs_diff(seed_intensity, im[row, col]) <= T:
                 segmented[row, col] = True
                 active += generate_neighbourhood(row, col, H, W)
-                
-        # tried recursion, didn't completely fill the proper regions
-        # any feedback on what went wrong?
-        # valid_neighbourhood(im, segmented, im[row, col], col, row, T, row == 233 and col == 436)
+
     return segmented
     ### END YOUR CODE HERE ### 
 
