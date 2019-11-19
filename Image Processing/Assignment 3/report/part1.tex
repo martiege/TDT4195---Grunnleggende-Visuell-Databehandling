@@ -15,7 +15,7 @@ Or, first applying a dilation, then applying a erosion using the same structurin
 After the first opening or closing, applying more openings or closings will not have any effect on the same image as you will inevitably erode and dilate the same shape each time. 
 
 \subsection*{b)}
-This is because the edge detection (and derivatives in general) enhance noise, making it virtually impossible to detect edges on a noisy image. Therefore it would be necessary to apply smoothing to the image before we can detect any edges. See \cref{fig:noisy_edge}, which illustrates how noise is amplified when derivated. 
+This is because the edge detection (and derivatives in general) enhance noise, making it virtually impossible to detect edges on a noisy image. Therefore it would be necessary to apply smoothing to the image, to remove noise (and preserves the edges), before we can detect any edges. See \cref{fig:noisy_edge}, which illustrates how noise is amplified when derivated. 
 
 \begin{figure}[]
     \centering
