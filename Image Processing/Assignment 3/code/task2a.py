@@ -25,15 +25,20 @@ def zero_division(a, b):
     else:
         return a / b
 
-def otsu_thresholding(im: np.ndarray) -> int:
+def otsu_thresholding(im: np.ndarray, find_eta=False) -> int:
     """
         Otsu's thresholding algorithm that segments an image into 1 or 0 (True or False)
         The function takes in a grayscale image and outputs a boolean image
 
         args:
             im: np.ndarray of shape (H, W) in the range [0, 255] (dtype=np.uint8)
+            find_eta: boolean, true if the eta_star should be returned also
         return:
-            (int) the computed thresholding value
+            if find_eta
+                (int, int) the computed thresholding value and eta
+            else 
+                (int) the computed thresholding value
+            
     """
     assert im.dtype == np.uint8
     ### START YOUR CODE HERE ### (You can change anything inside this block) 
@@ -82,17 +87,18 @@ def otsu_thresholding(im: np.ndarray) -> int:
     sigma_B2_max = np.amax(sigma_B2)
     k_stars = [i for i, j in enumerate(sigma_B2) if j == sigma_B2_max]
     k_star = int(sum(k_stars) / len(k_stars))
-    print(k_star)
+
+    threshold = k_star
 
     # 7. Compute the global variance, sigma_G2, using Eq. (10-58), and then obtain the separability 
     # measure, eta_star, by evaluating Eq. (10-61) with k = k_star
-    sigma_G2 = lower_cu_sum(L, p, lambda i, p_i: (i - m_G)**2 * p_i)
-    eta = sigma_B2 / sigma_G2
-    eta_star = eta[k_star]
-    print(eta_star)
-
-    threshold = k_star
-    return threshold
+    if find_eta:
+        sigma_G2 = lower_cu_sum(L, p, lambda i, p_i: (i - m_G)**2 * p_i)
+        eta = sigma_B2 / sigma_G2
+        eta_star = eta[k_star]
+        return threshold, eta_star
+    else:
+        return threshold
     ### END YOUR CODE HERE ### 
 
 
